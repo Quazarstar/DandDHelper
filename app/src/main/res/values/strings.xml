@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DungeonAndDragonHelper</string>
+    <string name="welcome"><![CDATA[Welcome to the D&D world]]></string>
+    <string name="Home"><![CDATA[D&D Helper Home]]></string>
+    <string name="Map_button">Click to go to map generation</string>
+    <string name="start_button">Start your Adventure!</string>
+    <string name="generate_map">Generate Map</string>
+    <string name="get">Get map</string>
+    <string name="go_home">Return to home</string>
+    <string name="save_map">Save Map</string>
+    <string name="welcome_adventure">Welcome to the adventure page.</string>
+    <string name="begin">Your adventure begins with _________ (Tap to select number of heroes)</string>
+    <string name="heroes_in_party">heroes in your party</string>
+    <string name="partyMembers">Your adventure begins, the adventurers in your party are \u0020</string>
+</resources>
