@@ -9,27 +9,26 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AdventureActivity extends AppCompatActivity {
-
-TextView beginningtext;
+public class ChapterTwoActivity extends AppCompatActivity {
+    TextView chapterTwoText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adventure);
+        setContentView(R.layout.activity_chapter_two);
 
-        beginningtext = (TextView) findViewById(R.id.beginningtext);
+        chapterTwoText = (TextView) findViewById(R.id.chapterTwoStart);
 
-        beginningtext.setOnClickListener(new View.OnClickListener() {
+        chapterTwoText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                PopupMenu heroPop = new PopupMenu(AdventureActivity.this, beginningtext);
-                heroPop.getMenuInflater().inflate(R.menu.heropop_menu, heroPop.getMenu());
+                PopupMenu heroPop = new PopupMenu(ChapterTwoActivity.this, chapterTwoText);
+                heroPop.getMenuInflater().inflate(R.menu.chapter2townpopup, heroPop.getMenu());
                 heroPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(AdventureActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
-                        beginningtext.setText(R.string.partyMembers);
-                        beginningtext.append(item.getTitle());
+                        Toast.makeText(ChapterTwoActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+                        chapterTwoText.setText(R.string.startTown);
+                        chapterTwoText.append(item.getTitle());
                         return true;
                     }
                 });
@@ -45,9 +44,4 @@ TextView beginningtext;
         startActivity(intent);
     }
 
-
-    public void goChapterTwo(View view) {
-        Intent intent = new Intent(this, ChapterTwoActivity.class);
-        startActivity(intent);
-    }
 }

@@ -12,4 +12,11 @@
     <string name="begin">Your adventure begins with _________ (Tap to select number of heroes)</string>
     <string name="heroes_in_party">heroes in your party</string>
     <string name="partyMembers">Your adventure begins, the adventurers in your party are \u0020</string>
+    <string name="startTown">The adventuring party makes their way to the town of \u0020</string>
+    <string name="nextChapter">Next Chapter</string>
+    <string name="ch2">Chapter Two</string>
+    <string name="ch2Start">Your adventure takes its next step, your party arrives in the town of ____ (Tap to select town)</string>
+    <string name="town2">Valisten</string>
+    <string name="town1">Listalum</string>
+    <string name="town3">Draker</string>
 </resources>
