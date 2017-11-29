@@ -2,14 +2,18 @@
 
     <item
         android:id="@+id/one"
-        android:title="One"/>
+        android:title="@string/party1"/>
 
     <item
         android:id="@+id/two"
-        android:title="Two"/>
+        android:title="@string/party2"/>
 
     <item
         android:id="@+id/three"
-        android:title="Three"/>
+        android:title="@string/party3"/>
+
+    <item
+        android:id="@+id/four"
+        android:title="@string/party4"/>
 
 </menu>

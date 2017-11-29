@@ -9,15 +9,19 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class AdventureActivity extends AppCompatActivity {
 
 TextView beginningtext;
+TextView beginningQuest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adventure);
 
+        beginningQuest = (TextView) findViewById(R.id.chapterOneQuest);
         beginningtext = (TextView) findViewById(R.id.beginningtext);
 
         beginningtext.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +41,26 @@ TextView beginningtext;
                 heroPop.show();//showing popup menu
             }
         });//closing the setOnClickListener method
+
+
+
+        beginningQuest.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                PopupMenu questPop = new PopupMenu(AdventureActivity.this, beginningQuest);
+                questPop.getMenuInflater().inflate(R.menu.questpop_menu, questPop.getMenu());
+                questPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem questItem) {
+                        Toast.makeText(AdventureActivity.this, "You Clicked : " + questItem.getTitle(), Toast.LENGTH_SHORT).show();
+                        beginningQuest.setText(R.string.selectedQuest);
+                        beginningQuest.append(questItem.getTitle());
+                        return true;
+                    }
+                });
+
+                questPop.show();
+            }
+        });
 
     }
 

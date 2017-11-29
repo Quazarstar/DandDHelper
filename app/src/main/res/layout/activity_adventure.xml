@@ -25,12 +25,9 @@
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="33dp"
-            android:layout_marginStart="33dp"
             android:text="@string/welcome_adventure"
             android:textColor="#ffffff"
             android:textSize="20sp" />
@@ -45,7 +42,18 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="35dp"
             android:text="@string/begin"
+            android:textSize="15sp"
             android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/chapterOneQuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_below="@+id/beginningtext"
+            android:text="@string/questObjective" />
 
 
     </RelativeLayout>

@@ -8,8 +8,8 @@
     <string name="get">Get map</string>
     <string name="go_home">Return to home</string>
     <string name="save_map">Save Map</string>
-    <string name="welcome_adventure">Welcome to the adventure page.</string>
-    <string name="begin">Your adventure begins with _________ (Tap to select number of heroes)</string>
+    <string name="welcome_adventure">Welcome to chapter one.</string>
+    <string name="begin">Your adventure begins with _________ (Tap to select options in blank spaces)</string>
     <string name="heroes_in_party">heroes in your party</string>
     <string name="partyMembers">Your adventure begins, the adventurers in your party are \u0020</string>
     <string name="startTown">The adventuring party makes their way to the town of \u0020</string>
@@ -19,4 +19,13 @@
     <string name="town2">Valisten</string>
     <string name="town1">Listalum</string>
     <string name="town3">Draker</string>
+    <string name="questObjective">Your adventuring parties main quest objective is _____</string>
+    <string name="selectedQuest">Your parties main objective in this campaign is to \u0020</string>
+    <string name="quest3">Become Gods</string>
+    <string name="quest2">Retrieve the artifact of power from a wizard</string>
+    <string name="quest1">Defeat the Dark Dragon in the mountains</string>
+    <string name="party1">One</string>
+    <string name="party2">Two</string>
+    <string name="party3">Three</string>
+    <string name="party4">Four</string>
 </resources>
