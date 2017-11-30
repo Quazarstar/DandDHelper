@@ -1,28 +1,30 @@
 package com.example.alexwong.dungeonanddragonhelper;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class AdventureActivity extends AppCompatActivity {
 
 TextView beginningtext;
 TextView beginningQuest;
+TextView beginningTown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adventure);
 
-        beginningQuest = (TextView) findViewById(R.id.chapterOneQuest);
-        beginningtext = (TextView) findViewById(R.id.beginningtext);
+        beginningQuest = findViewById(R.id.chapterOneQuest);
+        beginningtext = findViewById(R.id.beginningtext);
+        beginningTown = findViewById(R.id.chapterOneTown);
+        final Button townButton = findViewById(R.id.townMapButton);
 
         beginningtext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +39,6 @@ TextView beginningQuest;
                         return true;
                     }
                 });
-
                 heroPop.show();//showing popup menu
             }
         });//closing the setOnClickListener method
@@ -57,8 +58,25 @@ TextView beginningQuest;
                         return true;
                     }
                 });
-
                 questPop.show();
+            }
+        });
+
+        beginningTown.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                PopupMenu townPop = new PopupMenu(AdventureActivity.this, beginningTown);
+                townPop.getMenuInflater().inflate(R.menu.chapter1town_menu, townPop.getMenu());
+                townPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem townItem) {
+                        Toast.makeText(AdventureActivity.this, "You Selected : " + townItem.getTitle(), Toast.LENGTH_SHORT).show();
+                        beginningTown.setText(R.string.ch1SelectedTown);
+                        beginningTown.append(townItem.getTitle());
+                        return true;
+                    }
+                });
+                townPop.show();
+                townButton.setVisibility(View.VISIBLE);
             }
         });
 

@@ -12,13 +12,13 @@
     <string name="begin">Your adventure begins with _________ (Tap to select options in blank spaces)</string>
     <string name="heroes_in_party">heroes in your party</string>
     <string name="partyMembers">Your adventure begins, the adventurers in your party are \u0020</string>
-    <string name="startTown">The adventuring party makes their way to the town of \u0020</string>
+    <string name="ch2SelectedTown">The adventuring party makes their way to the town of \u0020</string>
     <string name="nextChapter">Next Chapter</string>
     <string name="ch2">Chapter Two</string>
     <string name="ch2Start">Your adventure takes its next step, your party arrives in the town of ____ (Tap to select town)</string>
-    <string name="town2">Valisten</string>
-    <string name="town1">Listalum</string>
-    <string name="town3">Draker</string>
+    <string name="ch2town2">Valisten</string>
+    <string name="ch2town1">Listalum</string>
+    <string name="ch2town3">Draker</string>
     <string name="questObjective">Your adventuring parties main quest objective is _____</string>
     <string name="selectedQuest">Your parties main objective in this campaign is to \u0020</string>
     <string name="quest3">Become Gods</string>
@@ -28,4 +28,10 @@
     <string name="party2">Two</string>
     <string name="party3">Three</string>
     <string name="party4">Four</string>
+    <string name="chapterOneTown">Your adventuring party begins in the town of _____</string>
+    <string name="ch1town1">Rivera</string>
+    <string name="ch1town2">Valstak</string>
+    <string name="ch1town3">Leyvin</string>
+    <string name="ch1SelectedTown">Your adventuring party begins their journey in the town of \u0020</string>
+    <string name="genTownCh1">Generate town</string>
 </resources>

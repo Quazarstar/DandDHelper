@@ -55,6 +55,25 @@
             android:layout_below="@+id/beginningtext"
             android:text="@string/questObjective" />
 
+        <TextView
+            android:id="@+id/chapterOneTown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_below="@+id/chapterOneQuest"
+            android:text="@string/chapterOneTown"
+            />
+
+        <Button
+            android:id="@+id/townMapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chapterOneTown"
+            android:text="@string/genTownCh1"
+            android:visibility="invisible"/>
+
 
     </RelativeLayout>
 

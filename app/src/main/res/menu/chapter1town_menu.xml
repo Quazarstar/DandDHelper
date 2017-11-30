@@ -2,14 +2,14 @@
 
     <item
         android:id="@+id/one"
-        android:title="@string/ch2town1"/>
+        android:title="@string/ch1town1"/>
 
     <item
         android:id="@+id/two"
-        android:title="@string/ch2town2"/>
+        android:title="@string/ch1town2"/>
 
     <item
         android:id="@+id/three"
-        android:title="@string/ch2town3"/>
+        android:title="@string/ch1town3"/>
 
 </menu>
