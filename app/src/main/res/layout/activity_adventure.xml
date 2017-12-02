@@ -70,10 +70,39 @@
             android:id="@+id/townMapButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/chapterOneTown"
             android:text="@string/genTownCh1"
             android:visibility="invisible"/>
 
+        <TextView
+            android:id="@+id/oneDungeon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="@string/ch1Dungeon"
+            android:layout_below="@+id/townMapButton"/>
+
+        <Button
+            android:id="@+id/genDungeonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/generateDun"
+            android:visibility="invisible"
+            android:layout_below="@+id/oneDungeon"/>
+
+        <TextView
+            android:id="@+id/chapterOneEnemies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genDungeonButton"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="@string/ch1Enemies"/>
 
     </RelativeLayout>
 

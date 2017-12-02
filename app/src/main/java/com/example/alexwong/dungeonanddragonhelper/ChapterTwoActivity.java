@@ -26,7 +26,7 @@ public class ChapterTwoActivity extends AppCompatActivity {
                 heroPop.getMenuInflater().inflate(R.menu.chapter2townpopup, heroPop.getMenu());
                 heroPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(ChapterTwoActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ChapterTwoActivity.this,"You Selected : " + item.getTitle(),Toast.LENGTH_SHORT).show();
                         chapterTwoText.setText(R.string.ch2SelectedTown);
                         chapterTwoText.append(item.getTitle());
                         return true;

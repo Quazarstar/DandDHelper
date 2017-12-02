@@ -15,6 +15,8 @@ public class AdventureActivity extends AppCompatActivity {
 TextView beginningtext;
 TextView beginningQuest;
 TextView beginningTown;
+TextView beginningDungeon;
+TextView beginningEnemies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +26,11 @@ TextView beginningTown;
         beginningQuest = findViewById(R.id.chapterOneQuest);
         beginningtext = findViewById(R.id.beginningtext);
         beginningTown = findViewById(R.id.chapterOneTown);
+        beginningDungeon = findViewById(R.id.oneDungeon);
+        beginningEnemies = findViewById(R.id.chapterOneEnemies);
         final Button townButton = findViewById(R.id.townMapButton);
+        final Button dungeonButton = findViewById(R.id.genDungeonButton);
+
 
         beginningtext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +39,7 @@ TextView beginningTown;
                 heroPop.getMenuInflater().inflate(R.menu.heropop_menu, heroPop.getMenu());
                 heroPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(AdventureActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AdventureActivity.this,"You Selected : " + item.getTitle(),Toast.LENGTH_SHORT).show();
                         beginningtext.setText(R.string.partyMembers);
                         beginningtext.append(item.getTitle());
                         return true;
@@ -52,7 +58,7 @@ TextView beginningTown;
                 questPop.getMenuInflater().inflate(R.menu.questpop_menu, questPop.getMenu());
                 questPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem questItem) {
-                        Toast.makeText(AdventureActivity.this, "You Clicked : " + questItem.getTitle(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AdventureActivity.this, "You Selected : " + questItem.getTitle(), Toast.LENGTH_SHORT).show();
                         beginningQuest.setText(R.string.selectedQuest);
                         beginningQuest.append(questItem.getTitle());
                         return true;
@@ -77,6 +83,41 @@ TextView beginningTown;
                 });
                 townPop.show();
                 townButton.setVisibility(View.VISIBLE);
+            }
+        });
+
+        beginningDungeon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupMenu dungeonPop = new PopupMenu(AdventureActivity.this, beginningDungeon);
+                dungeonPop.getMenuInflater().inflate(R.menu.chapter1dungeon_menu, dungeonPop.getMenu());
+                dungeonPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem dungeonItem) {
+                        Toast.makeText(AdventureActivity.this, "You Selected : " + dungeonItem.getTitle(), Toast.LENGTH_SHORT).show();
+                        beginningDungeon.setText(R.string.ch1SelectedDungeon);
+                        beginningDungeon.append(dungeonItem.getTitle());
+                        return true;
+                    }
+                });
+                dungeonPop.show();
+                dungeonButton.setVisibility(View.VISIBLE);
+            }
+        });
+
+        beginningEnemies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupMenu enemyPop = new PopupMenu(AdventureActivity.this, beginningEnemies);
+                enemyPop.getMenuInflater().inflate(R.menu.chapter1enemy_menu, enemyPop.getMenu());
+                enemyPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem enemyItem) {
+                        Toast.makeText(AdventureActivity.this, "You Selected : " + enemyItem.getTitle(), Toast.LENGTH_SHORT).show();
+                        beginningEnemies.setText(R.string.ch1SelectedEnemies);
+                        beginningEnemies.append(enemyItem.getTitle());
+                        return true;
+                    }
+                });
+                enemyPop.show();
             }
         });
 
