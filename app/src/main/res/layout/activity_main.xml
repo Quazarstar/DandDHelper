@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/parchment"
     tools:context="com.example.alexwong.dungeonanddragonhelper.MainActivity">
 
     <LinearLayout
@@ -45,6 +45,14 @@
                 android:text="@string/Map_button"
                 android:onClick="goToMap"
                 android:layout_centerInParent="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monsterNameActivityButton"
+                android:onClick="goToDetection"
+                android:layout_below="@+id/map_button"
+                android:layout_centerHorizontal="true"/>
         </RelativeLayout>
 
     </LinearLayout>

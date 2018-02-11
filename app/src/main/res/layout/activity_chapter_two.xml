@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@color/backgroundColor"
+    android:background="@drawable/parchment"
     tools:context="com.example.alexwong.dungeonanddragonhelper.ChapterTwoActivity">
 
     <ScrollView
@@ -31,7 +31,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="35dp"
                 android:text="@string/ch2Start"
-                android:textColor="#ffffff" />
+                android:textColor="@color/blackBack" />
 
 
         </RelativeLayout>
@@ -73,7 +73,7 @@
             android:layout_alignStart="@+id/home_button"
             android:layout_gravity="center_horizontal"
             android:text="@string/ch2"
-            android:textColor="#ffffff"
+            android:textColor="@color/blackBack"
             android:textSize="20sp" />
 
 

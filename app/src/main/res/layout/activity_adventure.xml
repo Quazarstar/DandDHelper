@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@color/backgroundColor"
+    android:background="@drawable/parchment"
     tools:context="com.example.alexwong.dungeonanddragonhelper.AdventureActivity">
 
 <ScrollView
@@ -29,7 +29,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:text="@string/welcome_adventure"
-            android:textColor="#ffffff"
+            android:textColor="@color/blackBack"
             android:textSize="20sp" />
 
         <TextView
@@ -43,13 +43,13 @@
             android:layout_marginTop="35dp"
             android:text="@string/begin"
             android:textSize="15sp"
-            android:textColor="#ffffff" />
+            android:textColor="@color/blackBack" />
 
         <TextView
             android:id="@+id/chapterOneQuest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
+            android:textColor="@color/blackBack"
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:layout_below="@+id/beginningtext"
@@ -59,7 +59,7 @@
             android:id="@+id/chapterOneTown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
+            android:textColor="@color/blackBack"
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:layout_below="@+id/chapterOneQuest"
@@ -79,7 +79,7 @@
             android:id="@+id/oneDungeon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
+            android:textColor="@color/blackBack"
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:text="@string/ch1Dungeon"
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/genDungeonButton"
-            android:textColor="#ffffff"
+            android:textColor="@color/blackBack"
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:text="@string/ch1Enemies"/>

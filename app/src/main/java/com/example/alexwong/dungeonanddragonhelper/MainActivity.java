@@ -23,4 +23,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToDetection(View view) {
+        Intent intent = new Intent(this, MonsterDetectionActivity.class);
+        startActivity(intent);
+    }
 }

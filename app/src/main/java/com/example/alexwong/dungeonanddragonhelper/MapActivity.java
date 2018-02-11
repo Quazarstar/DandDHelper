@@ -19,6 +19,7 @@ import java.util.Random;
 
 public class MapActivity extends AppCompatActivity {
 
+    public static final int STORAGE_PERMISSIONS_REQUEST = 1;
     PhotoView photoView;
     Button mapButton;
     Button saveMapButton;

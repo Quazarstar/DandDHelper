@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -22,7 +25,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".MapActivity" />
         <activity android:name=".AdventureActivity" />
-        <activity android:name=".ChapterTwoActivity"></activity>
+        <activity android:name=".ChapterTwoActivity"/>
+        <activity android:name=".MonsterInfoActivitiy"/>
+        <activity android:name=".MonsterDetectionActivity"/>
     </application>
 
 </manifest>
