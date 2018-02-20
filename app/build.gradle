@@ -34,6 +34,7 @@ dependencies {
     compile 'com.google.apis:google-api-services-vision:v1-rev357-1.22.0'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile 'commons-io:commons-io:2.5'
+    compile 'com.firebaseui:firebase-ui-storage:0.6.0'
 }
 
 

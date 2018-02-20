@@ -6,7 +6,7 @@
     <string name="start_button">Start your Adventure!</string>
     <string name="generate_map">Generate Map</string>
     <string name="get">Get map</string>
-    <string name="go_home">Return to home</string>
+    <string name="go_home">Home</string>
     <string name="save_map">Save Map</string>
     <string name="welcome_adventure">Welcome to chapter one.</string>
     <string name="begin">Your adventure begins with _________ (Tap to select options in blank spaces)</string>
@@ -59,5 +59,7 @@
     <string name="clashOfClan">Clash of Clans is a freemium mobile strategy video game developed and published by Finnish game developer Supercell.\n\n Tips:\n1: Save Your Clash of Clans Gems in order to upgrade later.\n 2: Free Clash of Clans Gems. When you play you can earn free Clash of Clans gems by completing a variety of Clash of Clans Achievements or overcoming obstacles.  </string>
     <string name="monsterNameActivityButton">Go to Monster Name Detection</string>
     <string name="returnMain">Return To Main Menu</string>
+    <string name="upload_map">Upload Map</string>
+    <string name="download_map">Download Map</string>
 
 </resources>
