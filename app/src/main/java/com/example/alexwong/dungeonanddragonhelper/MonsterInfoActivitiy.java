@@ -45,7 +45,7 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
 
 
 
-    public void goToLogoDetection(View view) {
+    public void goToMonDetection(View view) {
         Intent intent = new Intent(this, MonsterDetectionActivity.class);
         startActivity(intent);
     }

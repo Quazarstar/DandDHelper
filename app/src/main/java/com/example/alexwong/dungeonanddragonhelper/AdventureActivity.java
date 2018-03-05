@@ -30,6 +30,7 @@ TextView beginningEnemies;
         beginningEnemies = findViewById(R.id.chapterOneEnemies);
         final Button townButton = findViewById(R.id.townMapButton);
         final Button dungeonButton = findViewById(R.id.genDungeonButton);
+        final Button monsterCameraButton = findViewById(R.id.monCodexButton);
 
 
         beginningtext.setOnClickListener(new View.OnClickListener() {
@@ -118,6 +119,7 @@ TextView beginningEnemies;
                     }
                 });
                 enemyPop.show();
+                monsterCameraButton.setVisibility(View.VISIBLE);
             }
         });
 
@@ -131,6 +133,11 @@ TextView beginningEnemies;
 
     public void goChapterTwo(View view) {
         Intent intent = new Intent(this, ChapterTwoActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToMonsterDetection(View view) {
+        Intent intent = new Intent(this, MonsterDetectionActivity.class);
         startActivity(intent);
     }
 }

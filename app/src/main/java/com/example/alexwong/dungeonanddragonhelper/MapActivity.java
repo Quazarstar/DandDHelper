@@ -9,6 +9,7 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -35,7 +36,6 @@ public class MapActivity extends AppCompatActivity {
     public static final int STORAGE_PERMISSIONS_REQUEST = 1;
     PhotoView photoView;
     Button mapButton;
-    Button saveMapButton;
     Random r;
 
     FirebaseStorage storage = FirebaseStorage.getInstance();
@@ -69,7 +69,7 @@ public class MapActivity extends AppCompatActivity {
 
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 //display random image
                 photoView.setImageResource(images[r.nextInt(images.length)]);
             }
@@ -80,7 +80,7 @@ public class MapActivity extends AppCompatActivity {
 
     }
 
-    public void goHome(View view){
+    public void goHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
@@ -103,7 +103,7 @@ public class MapActivity extends AppCompatActivity {
         success = true;
 
         if (success) {
-            Toast.makeText(getApplicationContext(), "Image saved with success to folder MapImages with name :" +fileName,
+            Toast.makeText(getApplicationContext(), "Image saved with success to folder MapImages with name :" + fileName,
                     Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(getApplicationContext(),
@@ -112,7 +112,8 @@ public class MapActivity extends AppCompatActivity {
 
     }
 
-    public void putBytes(View view){
+    public void putBytes(View view) {
+
         photoView.setDrawingCacheEnabled(true);
         photoView.buildDrawingCache();
         Bitmap bitmap = photoView.getDrawingCache();
@@ -129,13 +130,18 @@ public class MapActivity extends AppCompatActivity {
         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                boolean success = true;
                 // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
                 Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                if (success) {
+                    Toast.makeText(getApplicationContext(), "Map uploaded with success to database", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
 
-    public void getMapFromStorage(View view){
+
+    public void getMapFromStorage(View view) {
         StorageReference gsReference = storage.getReferenceFromUrl("gs://dungeonanddragonhelper.appspot.com/map.jpg");
         PhotoView photoView = findViewById(R.id.mapView);
         Glide.with(this)
@@ -144,6 +150,24 @@ public class MapActivity extends AppCompatActivity {
                 .into(photoView);
     }
 
+    public void deleteMapFromStorage(View view) {
+        StorageReference photoRef = storage.getReferenceFromUrl("gs://dungeonanddragonhelper.appspot.com/map.jpg");
+        photoRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                boolean success = true;
+                if (success) {
+                    Toast.makeText(getApplicationContext(), "Map deleted from Database successfully", Toast.LENGTH_LONG).show();
+                }
+                // File deleted successfully
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                // Uh-oh, an error occurred!
+            }
+        });
+    }
 }
 
 

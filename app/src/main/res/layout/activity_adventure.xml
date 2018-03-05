@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/chapterOneTown"
-            android:text="@string/genTownCh1"
+            android:text="@string/genTownButton"
             android:visibility="invisible"/>
 
         <TextView
@@ -103,6 +103,17 @@
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:text="@string/ch1Enemies"/>
+
+        <Button
+            android:id="@+id/monCodexButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/chapterOneEnemies"
+            android:text="@string/monsterCodexButton"
+            android:visibility="invisible"
+            android:onClick="goToMonsterDetection"
+            />
 
     </RelativeLayout>
 

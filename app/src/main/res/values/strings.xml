@@ -7,12 +7,13 @@
     <string name="generate_map">Generate Map</string>
     <string name="get">Get map</string>
     <string name="go_home">Home</string>
-    <string name="save_map">Save Map</string>
+    <string name="save_map">Save</string>
     <string name="welcome_adventure">Welcome to chapter one.</string>
     <string name="begin">Your adventure begins with _________ (Tap to select options in blank spaces)</string>
     <string name="heroes_in_party">heroes in your party</string>
     <string name="partyMembers">Your adventure begins, the adventurers in your party are \u0020</string>
     <string name="ch2SelectedTown">The adventuring party makes their way to the town of \u0020</string>
+    <string name="ch2SelectedSideQuest">Your party learns of a quest from the town to \u0020</string>
     <string name="nextChapter">Next Chapter</string>
     <string name="ch2">Chapter Two</string>
     <string name="ch2Start">Your adventure takes its next step, your party arrives in the town of ____ (Tap to select town)</string>
@@ -33,7 +34,7 @@
     <string name="ch1town2">Valstak</string>
     <string name="ch1town3">Leyvin</string>
     <string name="ch1SelectedTown">Your adventuring party begins their journey in the town of \u0020</string>
-    <string name="genTownCh1">Generate town</string>
+    <string name="genTownButton">Generate town</string>
     <string name="ch1Dungeon">Your first dungeon location is the _____</string>
     <string name="ch1SelectedDungeon">Your first dungeon location is the \u0020</string>
     <string name="generateDun">Generate Dungeon</string>
@@ -59,7 +60,13 @@
     <string name="clashOfClan">Clash of Clans is a freemium mobile strategy video game developed and published by Finnish game developer Supercell.\n\n Tips:\n1: Save Your Clash of Clans Gems in order to upgrade later.\n 2: Free Clash of Clans Gems. When you play you can earn free Clash of Clans gems by completing a variety of Clash of Clans Achievements or overcoming obstacles.  </string>
     <string name="monsterNameActivityButton">Go to Monster Name Detection</string>
     <string name="returnMain">Return To Main Menu</string>
-    <string name="upload_map">Upload Map</string>
-    <string name="download_map">Download Map</string>
+    <string name="upload_map">Upload</string>
+    <string name="download_map">Download</string>
+    <string name="chapter2Objective">Your party learns of a quest from the town to ____</string>
+    <string name="monsterCodexButton">Go to monster codex</string>
+    <string name="ch2sidequest1">Help defeat the raiding bandits</string>
+    <string name="ch2sidequest2">Solve a series of murder cases</string>
+    <string name="ch2sidequest3">Get an animal feed shipment from the nearby farm</string>
+    <string name="deleteMap">Delete Map</string>
 
 </resources>
