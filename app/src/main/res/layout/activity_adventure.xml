@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/blackBack"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:textSize="15sp"
             android:layout_below="@+id/beginningtext"
             android:text="@string/questObjective" />
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/blackBack"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:textSize="15sp"
             android:layout_below="@+id/chapterOneQuest"
             android:text="@string/chapterOneTown"
@@ -70,7 +70,7 @@
             android:id="@+id/townMapButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_below="@+id/chapterOneTown"
             android:text="@string/genTownButton"
             android:visibility="invisible"/>
@@ -80,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/blackBack"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:textSize="15sp"
             android:text="@string/ch1Dungeon"
             android:layout_below="@+id/townMapButton"/>
@@ -89,7 +89,7 @@
             android:id="@+id/genDungeonButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:text="@string/generateDun"
             android:visibility="invisible"
             android:layout_below="@+id/oneDungeon"/>
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/genDungeonButton"
             android:textColor="@color/blackBack"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:textSize="15sp"
             android:text="@string/ch1Enemies"/>
 

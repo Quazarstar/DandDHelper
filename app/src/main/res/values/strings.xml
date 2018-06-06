@@ -40,6 +40,9 @@
     <string name="generateDun">Generate Dungeon</string>
     <string name="ch1Enemies">The enemies in your first dungeon are _____</string>
     <string name="ch1SelectedEnemies">The enemies in your first dungeon are \u0020</string>
+    <string name="chapter2quest">While on this quest the party will lean of someone who knows information about their objective, this person is _____</string>
+    <string name="chapter2selectedquesthint">While on this quest the party will lean of someone who knows information about their objective, this person is \u0020</string>
+    <string name="chapter2Objective">Your party learns of a quest from the town to ____</string>
     <string name="goblin">Goblins</string>
     <string name="kobolds">Kobolds</string>
     <string name="bandits">Bandits</string>
@@ -62,11 +65,15 @@
     <string name="returnMain">Return To Main Menu</string>
     <string name="upload_map">Upload</string>
     <string name="download_map">Download</string>
-    <string name="chapter2Objective">Your party learns of a quest from the town to ____</string>
+
     <string name="monsterCodexButton">Go to monster codex</string>
     <string name="ch2sidequest1">Help defeat the raiding bandits</string>
     <string name="ch2sidequest2">Solve a series of murder cases</string>
     <string name="ch2sidequest3">Get an animal feed shipment from the nearby farm</string>
     <string name="deleteMap">Delete Map</string>
+    <string name="mainQuestHint1">The stubborn and greedy mayor.</string>
+    <string name="mainQuestHint2">The leader of the town\'s brothel.</string>
+    <string name="mainQuestHint3">A magical pixie living in the forest</string>
+
 
 </resources>

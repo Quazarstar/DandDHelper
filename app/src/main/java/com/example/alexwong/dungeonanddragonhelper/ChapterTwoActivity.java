@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class ChapterTwoActivity extends AppCompatActivity {
     TextView chapterTwoText;
     TextView chapterTwoSideQuest;
+    TextView chapterTwoObjective;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,8 @@ public class ChapterTwoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chapter_two);
 
         chapterTwoText = (TextView) findViewById(R.id.chapterTwoStart);
-        chapterTwoSideQuest = (TextView) findViewById(R.id.chapterTwoObjective);
+        chapterTwoSideQuest = (TextView) findViewById(R.id.chapterTwoSideQuest);
+        chapterTwoObjective = (TextView) findViewById(R.id.chapterTwoObjective);
 
         final Button townButton2 = findViewById(R.id.townButtonCh2);
 
@@ -61,6 +63,25 @@ public class ChapterTwoActivity extends AppCompatActivity {
                 sidequest2Pop.show();
             }
 
+        });
+
+        chapterTwoObjective.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                PopupMenu objective2Pop = new PopupMenu(ChapterTwoActivity.this, chapterTwoObjective);
+                objective2Pop.getMenuInflater().inflate(R.menu.ch2mainquestpop_menu, objective2Pop.getMenu());
+                objective2Pop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(ChapterTwoActivity.this, "You Selected : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+                        chapterTwoObjective.setText(R.string.chapter2selectedquesthint);
+                        chapterTwoObjective.append(item.getTitle());
+                        return true;
+                    }
+                });
+
+                objective2Pop.show();
+            }
         });
 
     }

@@ -37,20 +37,31 @@
                 android:id="@+id/townButtonCh2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_below="@+id/chapterTwoStart"
                 android:text="@string/genTownButton"
                 android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/chapterTwoSideQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackBack"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:layout_below="@id/townButtonCh2"
+                android:text="@string/chapter2Objective"
+                />
 
             <TextView
                 android:id="@+id/chapterTwoObjective"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:layout_below="@id/townButtonCh2"
-                android:text="@string/chapter2Objective"
+                android:layout_below="@id/chapterTwoSideQuest"
+                android:text="@string/chapter2quest"
                 />
 
 
