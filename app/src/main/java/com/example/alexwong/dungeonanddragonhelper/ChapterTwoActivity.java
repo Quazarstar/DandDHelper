@@ -14,6 +14,8 @@ public class ChapterTwoActivity extends AppCompatActivity {
     TextView chapterTwoText;
     TextView chapterTwoSideQuest;
     TextView chapterTwoObjective;
+    TextView chapterTwoMainDungeon;
+    TextView chapterTwoToChapterThree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class ChapterTwoActivity extends AppCompatActivity {
         chapterTwoText = (TextView) findViewById(R.id.chapterTwoStart);
         chapterTwoSideQuest = (TextView) findViewById(R.id.chapterTwoSideQuest);
         chapterTwoObjective = (TextView) findViewById(R.id.chapterTwoObjective);
+        chapterTwoMainDungeon = (TextView) findViewById(R.id.chapterTwoObjectiveDungeon);
+        chapterTwoToChapterThree = (TextView) findViewById(R.id.chapterTwoEnd);
 
         final Button townButton2 = findViewById(R.id.townButtonCh2);
 
@@ -81,6 +85,44 @@ public class ChapterTwoActivity extends AppCompatActivity {
                 });
 
                 objective2Pop.show();
+            }
+        });
+
+        chapterTwoMainDungeon.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                PopupMenu ch2Dungeon = new PopupMenu(ChapterTwoActivity.this, chapterTwoMainDungeon);
+                ch2Dungeon.getMenuInflater().inflate(R.menu.ch2mainquestdungeon_menu, ch2Dungeon.getMenu());
+                ch2Dungeon.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(ChapterTwoActivity.this, "You Selected : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+                        chapterTwoMainDungeon.setText(R.string.chapterTwoSelectedObjectiveRumor);
+                        chapterTwoMainDungeon.append(item.getTitle());
+                        return true;
+                    }
+                });
+
+                ch2Dungeon.show();
+            }
+        });
+
+        chapterTwoToChapterThree.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                PopupMenu ch2End = new PopupMenu(ChapterTwoActivity.this, chapterTwoToChapterThree);
+                ch2End.getMenuInflater().inflate(R.menu.ch2toch3pop_menu, ch2End.getMenu());
+                ch2End.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(ChapterTwoActivity.this, "You Selected : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+                        chapterTwoToChapterThree.setText(R.string.chapterTwoSelectedEnd);
+                        chapterTwoToChapterThree.append(item.getTitle());
+                        return true;
+                    }
+                });
+
+                ch2End.show();
             }
         });
 

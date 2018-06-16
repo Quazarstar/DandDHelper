@@ -64,6 +64,30 @@
                 android:text="@string/chapter2quest"
                 />
 
+            <TextView
+                android:id="@+id/chapterTwoObjectiveDungeon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackBack"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:layout_below="@id/chapterTwoObjective"
+                android:text="@string/chapterTwoObjectiveRumor"
+                />
+
+            <TextView
+                android:id="@+id/chapterTwoEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackBack"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:layout_below="@id/chapterTwoObjectiveDungeon"
+                android:text="@string/chapterTwoToChapterThreeReason"
+                />
+
+
+
 
         </RelativeLayout>
 

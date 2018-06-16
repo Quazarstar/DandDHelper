@@ -26,15 +26,13 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
     public void getContentBasedOnTitle(String title) {
         String textToShow;
         switch (title) {
-            case "DARK SOULS\n":  textToShow = getString(R.string.darkSoul);
+            case "GOBLIN\n":  textToShow = getString(R.string.goblin);
                 break;
-            case "FORTNITE\n":  textToShow = getString(R.string.fortnite);
+            case "KOBOLD\n":  textToShow = getString(R.string.kobolds);
                 break;
-            case "SKYRIM\n":  textToShow = getString(R.string.skyRim);
+            case "WOLF\n":  textToShow = getString(R.string.wolves);
                 break;
-            case "SUPER\nMARIO\nTM\n":  textToShow = getString(R.string.superMario);
-                break;
-            case "CLASH OF\nCLANS\n": textToShow = getString(R.string.clashOfClan);
+            case "BANDITS":  textToShow = getString(R.string.bandits);
                 break;
             default: textToShow = "Invalid title";
                 break;
