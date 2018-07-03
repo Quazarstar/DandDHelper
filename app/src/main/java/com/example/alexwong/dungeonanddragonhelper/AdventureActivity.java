@@ -1,6 +1,8 @@
 package com.example.alexwong.dungeonanddragonhelper;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -18,6 +20,7 @@ TextView beginningTown;
 TextView beginningDungeon;
 TextView beginningEnemies;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,43 @@ TextView beginningEnemies;
         final Button townButton = findViewById(R.id.townMapButton);
         final Button dungeonButton = findViewById(R.id.genDungeonButton);
         final Button monsterCameraButton = findViewById(R.id.monCodexButton);
+
+        if(savedInstanceState != null){
+            String beginningSave = savedInstanceState.getString("beginSave");
+            beginningtext.setText(beginningSave);
+            String questSave = savedInstanceState.getString("beginQuest");
+            beginningQuest.setText(questSave);
+            String townSave = savedInstanceState.getString("beginTown");
+            beginningTown.setText(townSave);
+            String dungeonSave = savedInstanceState.getString("beginDungeon");
+            beginningDungeon.setText(dungeonSave);
+            String enemySave = savedInstanceState.getString("beginEnemy");
+            beginningEnemies.setText(enemySave);
+
+        }
+
+        String sPStart = getPreferences(Context.MODE_PRIVATE).getString("beginSave", "");
+        if(!sPStart.equals("")){
+            beginningtext.setText(sPStart);
+        }
+        String sPQuest = getPreferences(Context.MODE_PRIVATE).getString("beginQuest", "");
+        if(!sPQuest.equals("")){
+            beginningQuest.setText(sPQuest);
+        }
+        String sPTown = getPreferences(Context.MODE_PRIVATE).getString("beginTown", "");
+        if(!sPTown.equals("")){
+            beginningTown.setText(sPTown);
+        }
+        String sPDungeon = getPreferences(Context.MODE_PRIVATE).getString("beginDungeon", "");
+        if(!sPDungeon.equals("")){
+            beginningDungeon.setText(sPDungeon);
+        }
+        String sPEnemy = getPreferences(Context.MODE_PRIVATE).getString("beginEnemy", "");
+        if(!sPEnemy.equals("")){
+            beginningEnemies.setText(sPEnemy);
+        }
+
+
 
 
         beginningtext.setOnClickListener(new View.OnClickListener() {
@@ -125,6 +165,37 @@ TextView beginningEnemies;
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+
+        outState.putString("beginSave", beginningtext.getText().toString());
+        outState.putString("beginQuest", beginningQuest.getText().toString());
+        outState.putString("beginTown", beginningTown.getText().toString());
+        outState.putString("beginDungeon", beginningDungeon.getText().toString());
+        outState.putString("beginEnemy", beginningEnemies.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
+
+    private void saveSettings(){
+        SharedPreferences.Editor sPEditor = getPreferences(Context.MODE_PRIVATE).edit();
+
+        sPEditor.putString("beginSave", beginningtext.getText().toString());
+        sPEditor.putString("beginQuest", beginningQuest.getText().toString());
+        sPEditor.putString("beginTown", beginningTown.getText().toString());
+        sPEditor.putString("beginDungeon", beginningDungeon.getText().toString());
+        sPEditor.putString("beginEnemy", beginningEnemies.getText().toString());
+
+        sPEditor.apply();
+    }
+
+    @Override
+    protected void onStop() {
+
+        saveSettings();
+        super.onStop();
+    }
+
     public void returnHome(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
@@ -139,5 +210,13 @@ TextView beginningEnemies;
     public void goToMonsterDetection(View view) {
         Intent intent = new Intent(this, MonsterDetectionActivity.class);
         startActivity(intent);
+    }
+
+    public void newCampaign(View view) {
+        beginningtext.setText(R.string.begin);
+        beginningQuest.setText(R.string.questObjective);
+        beginningTown.setText(R.string.chapterOneTown);
+        beginningDungeon.setText(R.string.ch1Dungeon);
+        beginningEnemies.setText(R.string.ch1Enemies);
     }
 }

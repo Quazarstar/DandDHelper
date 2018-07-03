@@ -1,6 +1,8 @@
 package com.example.alexwong.dungeonanddragonhelper;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -27,8 +29,41 @@ public class ChapterTwoActivity extends AppCompatActivity {
         chapterTwoObjective = (TextView) findViewById(R.id.chapterTwoObjective);
         chapterTwoMainDungeon = (TextView) findViewById(R.id.chapterTwoObjectiveDungeon);
         chapterTwoToChapterThree = (TextView) findViewById(R.id.chapterTwoEnd);
-
         final Button townButton2 = findViewById(R.id.townButtonCh2);
+
+        if(savedInstanceState !=null){
+            String ch2StartSave = savedInstanceState.getString("ch2Begin");
+            chapterTwoText.setText(ch2StartSave);
+            String ch2SideQuestSave = savedInstanceState.getString("ch2SQ");
+            chapterTwoSideQuest.setText(ch2SideQuestSave);
+            String ch2Obj = savedInstanceState.getString("ch2OBJ");
+            chapterTwoObjective.setText(ch2Obj);
+            String ch2MD = savedInstanceState.getString("ch2MD");
+            chapterTwoMainDungeon.setText(ch2MD);
+            String ch2Ch3 = savedInstanceState.getString("ch2CH3");
+            chapterTwoToChapterThree.setText(ch2Ch3);
+        }
+
+        String sPCh2Begin = getPreferences(Context.MODE_PRIVATE).getString("ch2Begin", "");
+        if(!sPCh2Begin.equals("")){
+            chapterTwoText.setText(sPCh2Begin);
+        }
+        String sPCh2SQ = getPreferences(Context.MODE_PRIVATE).getString("ch2SQ", "");
+        if(!sPCh2SQ.equals("")){
+            chapterTwoSideQuest.setText(sPCh2SQ);
+        }
+        String sPCh2OBJ = getPreferences(Context.MODE_PRIVATE).getString("ch2OBJ", "");
+        if(!sPCh2OBJ.equals("")){
+            chapterTwoObjective.setText(sPCh2OBJ);
+        }
+        String sPCh2MD = getPreferences(Context.MODE_PRIVATE).getString("ch2MD", "");
+        if(!sPCh2MD.equals("")){
+            chapterTwoMainDungeon.setText(sPCh2MD);
+        }
+        String sPCh2Ch3 = getPreferences(Context.MODE_PRIVATE).getString("ch2CH3", "");
+        if(!sPCh2Ch3.equals("")){
+            chapterTwoToChapterThree.setText(sPCh2Ch3);
+        }
 
         chapterTwoText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,9 +163,52 @@ public class ChapterTwoActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+
+        outState.putString("ch2Begin", chapterTwoText.getText().toString());
+        outState.putString("ch2SQ", chapterTwoSideQuest.getText().toString());
+        outState.putString("ch2OBJ", chapterTwoObjective.getText().toString());
+        outState.putString("ch2MD", chapterTwoMainDungeon.getText().toString());
+        outState.putString("ch2CH3", chapterTwoToChapterThree.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
+
+    private void saveSettings(){
+        SharedPreferences.Editor sPEditor = getPreferences(Context.MODE_PRIVATE).edit();
+
+        sPEditor.putString("ch2Begin", chapterTwoText.getText().toString());
+        sPEditor.putString("ch2SQ", chapterTwoSideQuest.getText().toString());
+        sPEditor.putString("ch2OBJ", chapterTwoObjective.getText().toString());
+        sPEditor.putString("ch2MD", chapterTwoMainDungeon.getText().toString());
+        sPEditor.putString("ch2CH3", chapterTwoToChapterThree.getText().toString());
+
+        sPEditor.apply();
+
+    }
+
+    @Override
+    protected void onStop() {
+        saveSettings();
+        super.onStop();
+    }
+
     public void returnHome(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
+    public void goBack(View view) {
+        Intent intent = new Intent(this, AdventureActivity.class);
+        startActivity(intent);
+    }
+
+    public void newCampaign(View view) {
+        chapterTwoText.setText(R.string.ch2Start);
+        chapterTwoSideQuest.setText(R.string.chapter2Objective);
+        chapterTwoObjective.setText(R.string.chapter2quest);
+        chapterTwoMainDungeon.setText(R.string.chapterTwoObjectiveRumor);
+        chapterTwoToChapterThree.setText(R.string.chapterTwoToChapterThreeReason);
+    }
 }

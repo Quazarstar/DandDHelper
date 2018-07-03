@@ -103,19 +103,30 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/go_home"
-            android:id="@+id/home_button"
+            android:text="@string/prevChapter"
+            android:id="@+id/back_button"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:onClick="returnHome"/>
+            android:onClick="goBack"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_toRightOf="@id/home_button"
-            android:layout_toEndOf="@id/home_button"
+            android:text="@string/newCampaign"
+            android:onClick="newCampaign"
+            android:id="@+id/prevChapter"
+            android:layout_toLeftOf="@id/back_button"
+            android:layout_toStartOf="@id/back_button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/back_button"
+            android:layout_toEndOf="@id/back_button"
             android:text="@string/nextChapter"
             android:id="@+id/nextChapter" />
 
@@ -123,9 +134,9 @@
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/home_button"
+            android:layout_alignLeft="@+id/back_button"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/home_button"
+            android:layout_alignStart="@+id/back_button"
             android:layout_gravity="center_horizontal"
             android:text="@string/ch2"
             android:textColor="@color/blackBack"

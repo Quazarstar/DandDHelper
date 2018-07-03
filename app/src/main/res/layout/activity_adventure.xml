@@ -32,6 +32,7 @@
             android:textColor="@color/blackBack"
             android:textSize="20sp" />
 
+
         <TextView
             android:id="@+id/beginningtext"
             android:layout_width="wrap_content"
@@ -134,6 +135,17 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:onClick="returnHome"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/newCampaign"
+                    android:onClick="newCampaign"
+                    android:id="@+id/prevChapter"
+                    android:layout_toLeftOf="@id/home_button"
+                    android:layout_toStartOf="@id/home_button" />
 
                 <Button
                     android:layout_width="wrap_content"

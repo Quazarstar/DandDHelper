@@ -79,6 +79,8 @@
     <string name="ch2secretVillage">The secret village in the north</string>
     <string name="ch2HiddenPass">A hidden passage to create a shortcut</string>
     <string name="ch2Cart">A special traveling cart for transport</string>
+    <string name="prevChapter">Prev Chapter</string>
+    <string name="newCampaign">New Campaign</string>
 
 
 </resources>
