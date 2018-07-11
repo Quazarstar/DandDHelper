@@ -69,7 +69,7 @@ public class ChapterTwoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 PopupMenu town2Pop = new PopupMenu(ChapterTwoActivity.this, chapterTwoText);
-                town2Pop.getMenuInflater().inflate(R.menu.chapter2townpopup, town2Pop.getMenu());
+                town2Pop.getMenuInflater().inflate(R.menu.ch2townpopup, town2Pop.getMenu());
                 town2Pop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
                         Toast.makeText(ChapterTwoActivity.this,"You Selected : " + item.getTitle(),Toast.LENGTH_SHORT).show();
@@ -194,11 +194,6 @@ public class ChapterTwoActivity extends AppCompatActivity {
         super.onStop();
     }
 
-    public void returnHome(View view){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     public void goBack(View view) {
         Intent intent = new Intent(this, AdventureActivity.class);
         startActivity(intent);
@@ -210,5 +205,15 @@ public class ChapterTwoActivity extends AppCompatActivity {
         chapterTwoObjective.setText(R.string.chapter2quest);
         chapterTwoMainDungeon.setText(R.string.chapterTwoObjectiveRumor);
         chapterTwoToChapterThree.setText(R.string.chapterTwoToChapterThreeReason);
+    }
+
+    public void goToChapterThree(View view) {
+        Intent intent = new Intent(this, ChapterThreeActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToMap(View view) {
+        Intent intent = new Intent(this, MapActivity.class);
+        startActivity(intent);
     }
 }

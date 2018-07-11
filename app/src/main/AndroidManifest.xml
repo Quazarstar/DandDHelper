@@ -26,9 +26,10 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".MapActivity" />
         <activity android:name=".AdventureActivity" />
-        <activity android:name=".ChapterTwoActivity"/>
-        <activity android:name=".MonsterInfoActivitiy"/>
-        <activity android:name=".MonsterDetectionActivity"/>
+        <activity android:name=".ChapterTwoActivity" />
+        <activity android:name=".MonsterInfoActivitiy" />
+        <activity android:name=".MonsterDetectionActivity" />
+        <activity android:name=".ChapterThreeActivity"></activity>
     </application>
 
 </manifest>

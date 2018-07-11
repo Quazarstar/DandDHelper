@@ -2,20 +2,21 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:background="@drawable/parchment"
-    tools:context="com.example.alexwong.dungeonanddragonhelper.ChapterTwoActivity">
+    tools:context="com.example.alexwong.dungeonanddragonhelper.ChapterThreeActivity">
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="true"
-        android:fadeScrollbars="false">
+        android:fadeScrollbars="false"
+        android:id="@+id/scrollView2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,22 +27,23 @@
                 android:id="@+id/welcomeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/ch2"
+                android:layout_gravity="center"
+                android:text="@string/ch3"
                 android:textColor="@color/blackBack"
                 android:textSize="20sp" />
 
+
             <TextView
-                android:id="@+id/chapterTwoStart"
+                android:id="@+id/chapterThreeStart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="35dp"
-                android:text="@string/ch2Start"
+                android:text="@string/ch3StartTown"
                 android:textColor="@color/blackBack" />
 
             <Button
-                android:id="@+id/townButtonCh2"
+                android:id="@+id/townButtonCh3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -50,80 +52,74 @@
                 android:visibility="invisible"/>
 
             <TextView
-                android:id="@+id/chapterTwoSideQuest"
+                android:id="@+id/chapterThreeProblem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:text="@string/chapter2Objective"
+                android:text="@string/ch3TownDisaster"
                 />
 
             <TextView
-                android:id="@+id/chapterTwoObjective"
+                android:id="@+id/chapterThreeSolution"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:text="@string/chapter2quest"
+                android:text="@string/ch3Informant"
                 />
 
             <TextView
-                android:id="@+id/chapterTwoObjectiveDungeon"
+                android:id="@+id/chapterThreeBetrayl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:text="@string/chapterTwoObjectiveRumor"
+                android:text="@string/ch3betrayl"
                 />
 
             <TextView
-                android:id="@+id/chapterTwoEnd"
+                android:id="@+id/chapterThreeEnd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:text="@string/chapterTwoToChapterThreeReason"
+                android:text="@string/ch3End"
                 />
-
-
-
-
-
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/prevChapter"
+                    android:orientation="horizontal">
+
+
+                <Button
                     android:id="@+id/back_button"
-                    android:onClick="goBack"/>
-
-                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/clear"
+                    android:onClick="goBack"
+                    android:text="@string/prevChapter" />
+
+                <Button
+                    android:id="@+id/pastChapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="newCampaign"
-                    android:id="@+id/prevChapter" />
+                    android:text="@string/clear" />
 
                 <Button
+                    android:id="@+id/nextChapter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/nextChapter"
-                    android:onClick="goToChapterThree"
-                    android:id="@+id/nextChapter" />
+                    android:text="@string/nextChapter" />
+                </LinearLayout>
 
             </LinearLayout>
-        </LinearLayout>
     </ScrollView>
+
 
 
 </RelativeLayout>

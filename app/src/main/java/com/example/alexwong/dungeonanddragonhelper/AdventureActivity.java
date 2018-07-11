@@ -77,7 +77,7 @@ TextView beginningEnemies;
             @Override
             public void onClick(View v){
                 PopupMenu heroPop = new PopupMenu(AdventureActivity.this, beginningtext);
-                heroPop.getMenuInflater().inflate(R.menu.heropop_menu, heroPop.getMenu());
+                heroPop.getMenuInflater().inflate(R.menu.chapter1partynumpop_menu, heroPop.getMenu());
                 heroPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
                         Toast.makeText(AdventureActivity.this,"You Selected : " + item.getTitle(),Toast.LENGTH_SHORT).show();
@@ -96,7 +96,7 @@ TextView beginningEnemies;
             @Override
             public void onClick(View v){
                 PopupMenu questPop = new PopupMenu(AdventureActivity.this, beginningQuest);
-                questPop.getMenuInflater().inflate(R.menu.questpop_menu, questPop.getMenu());
+                questPop.getMenuInflater().inflate(R.menu.chapter1mainquestpop_menu, questPop.getMenu());
                 questPop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem questItem) {
                         Toast.makeText(AdventureActivity.this, "You Selected : " + questItem.getTitle(), Toast.LENGTH_SHORT).show();

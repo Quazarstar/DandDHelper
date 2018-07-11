@@ -2,14 +2,14 @@
 
     <item
         android:id="@+id/one"
-        android:title="@string/ch2secretEscort"/>
+        android:title="@string/ch3TownOne"/>
 
     <item
         android:id="@+id/two"
-        android:title="@string/ch2HiddenPass"/>
+        android:title="@string/ch3TownTwo"/>
 
     <item
         android:id="@+id/three"
-        android:title="@string/ch2Cart"/>
+        android:title="@string/ch3TownThree"/>
 
 </menu>

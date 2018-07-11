@@ -76,11 +76,36 @@
     <string name="hobgoblinDungeonch2">The hobgoblins in the nearby mountain</string>
     <string name="darkCultCh2">The dark cult in the sewers</string>
     <string name="forestDungeonCh2">The king of the forest wolves</string>
-    <string name="ch2secretVillage">The secret village in the north</string>
+    <string name="ch2secretEscort">The a special guide who shows them the quickest path</string>
     <string name="ch2HiddenPass">A hidden passage to create a shortcut</string>
     <string name="ch2Cart">A special traveling cart for transport</string>
     <string name="prevChapter">Prev Chapter</string>
     <string name="newCampaign">New Campaign</string>
-
-
+    <string name="ch3">Chapter Three</string>
+    <string name="ch3StartTown">After traveling for a long while from the previous village, the party would find themselves in the new town of ____</string>
+    <string name="ch3TownDisaster">After arriving in the town they would find that something tragic has befallen it, the town has been ____</string>
+    <string name="ch3Informant">By sheer luck the party would find someone to give them information about the way to solve this issue, this person is a ____</string>
+    <string name="ch3betrayl">Upon bringing the requested item to the informant it would be revealed that he\'s actually ____</string>
+    <string name="ch3End">After a short battle with the villain, he would of managed to escape in the direction of ____</string>
+    <string name="ch3TownOne">Mountain Grasp</string>
+    <string name="ch3TownTwo">Icefall</string>
+    <string name="ch3TownThree">Lavastone</string>
+    <string name="ch3DisasterOne">cursed, most of the villagers are mind controlled!</string>
+    <string name="ch3DisasterTwo">blocked by a dark barrier!</string>
+    <string name="ch3DisasterThree">encased in magical ice!</string>
+    <string name="ch3informantOne">wandering mercenary who instructs the party to find the gem of magic banishment.</string>
+    <string name="ch3InformantTwo">mysterious hooded man who offers to teach the spell to dispell magic, at a price.</string>
+    <string name="ch3InformantThree">rather strange barbarian who claims he can break the magic if he got his enchanted axe back from a nearby cave.</string>
+    <string name="ch3BetrayOne">one of the demon kings lackey\'s!</string>
+    <string name="ch3BetrayTwo">an assassin sent to dispatch the party, and he brought friends!</string>
+    <string name="ch3BetrayThree">an adventurer driven mad by wild magic, viewing you as evil to be purged.</string>
+    <string name="ch3EndOne">west.</string>
+    <string name="ch3EndTwo">north.</string>
+    <string name="ch3EndThree">east.</string>
+    <string name="ch3SelectedTown">After traveling for a long while from the previous village, the party would find themselves in the new town of \u0020</string>
+    <string name="ch3SelectedDisaster">After arriving int he town they would find that something tragic has befallen it, the town has been \u0020</string>
+    <string name="ch3SelectedContact">By sheer luck the party would find someone to give them information about the way to solve this issue, this person is a \u0020</string>
+    <string name="ch3SelectedBetray">Upon bringing the requested item to the informant it would be revealed that he\'s actually \u0020</string>
+    <string name="ch3SelectedEnd">After a short battle with the villain, he would of managed to escape in the direction of \u0020</string>
+    <string name="clear">Clear</string>
 </resources>
