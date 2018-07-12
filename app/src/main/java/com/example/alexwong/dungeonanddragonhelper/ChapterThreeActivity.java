@@ -211,4 +211,9 @@ public class ChapterThreeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MapActivity.class);
         startActivity(intent);
     }
+
+    public void goToChapterFour(View view) {
+        Intent intent = new Intent(this, ChapterFourActivity.class);
+        startActivity(intent);
+    }
 }

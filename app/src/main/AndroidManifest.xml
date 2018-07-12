@@ -29,7 +29,8 @@
         <activity android:name=".ChapterTwoActivity" />
         <activity android:name=".MonsterInfoActivitiy" />
         <activity android:name=".MonsterDetectionActivity" />
-        <activity android:name=".ChapterThreeActivity"></activity>
+        <activity android:name=".ChapterThreeActivity" />
+        <activity android:name=".ChapterFourActivity"></activity>
     </application>
 
 </manifest>

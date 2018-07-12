@@ -9,7 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:background="@drawable/parchment"
-    tools:context="com.example.alexwong.dungeonanddragonhelper.ChapterThreeActivity">
+    tools:context="com.example.alexwong.dungeonanddragonhelper.ChapterFourActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,72 +28,81 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/ch3"
+                android:text="@string/ch4"
                 android:textColor="@color/blackBack"
                 android:textSize="20sp" />
 
 
             <TextView
-                android:id="@+id/chapterThreeStart"
+                android:id="@+id/chapterFourStart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="35dp"
-                android:text="@string/ch3StartTown"
+                android:text="@string/ch4start"
                 android:textColor="@color/blackBack" />
 
             <Button
-                android:id="@+id/townButtonCh3"
+                android:id="@+id/mapButtonCh4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="@string/genTownButton"
+                android:text="@string/mapGen"
                 android:onClick="goToMap"
                 android:visibility="invisible"/>
 
             <TextView
-                android:id="@+id/chapterThreeProblem"
+                android:id="@+id/chapterFourClue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:text="@string/ch3TownDisaster"
+                android:text="@string/ch4Discovery"
                 />
 
             <TextView
-                android:id="@+id/chapterThreeSolution"
+                android:id="@+id/chapterFourDestination"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:text="@string/ch3Informant"
+                android:text="@string/ch4Destination"
+                />
+
+            <Button
+                android:id="@+id/mapButtonCh4Dungeon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/mapGen"
+                android:onClick="goToMap"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/chapterFourBattle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackBack"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:text="@string/ch4Battle"
                 />
 
             <TextView
-                android:id="@+id/chapterThreeBetrayl"
+                android:id="@+id/chapterFourEnd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blackBack"
                 android:layout_marginTop="15dp"
                 android:textSize="15sp"
-                android:text="@string/ch3betrayl"
+                android:text="@string/ch4End"
                 />
-
-            <TextView
-                android:id="@+id/chapterThreeEnd"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/blackBack"
-                android:layout_marginTop="15dp"
-                android:textSize="15sp"
-                android:text="@string/ch3End"
-                />
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                android:orientation="horizontal">
 
 
                 <Button
@@ -114,11 +123,10 @@
                     android:id="@+id/nextChapter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/nextChapter"
-                    android:onClick="goToChapterFour"/>
-                </LinearLayout>
-
+                    android:text="@string/nextChapter" />
             </LinearLayout>
+
+        </LinearLayout>
     </ScrollView>
 
 
