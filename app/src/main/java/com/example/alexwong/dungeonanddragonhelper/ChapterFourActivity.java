@@ -36,8 +36,8 @@ public class ChapterFourActivity extends AppCompatActivity {
         if(savedInstanceState !=null){
             String ch4StartSave = savedInstanceState.getString("ch4Begin");
             chapterFourStart.setText(ch4StartSave);
-            String ch3ClueSave = savedInstanceState.getString("ch4Clue");
-            chapterFourClue.setText(ch3ClueSave);
+            String ch4ClueSave = savedInstanceState.getString("ch4Clue");
+            chapterFourClue.setText(ch4ClueSave);
             String ch4LocalSave = savedInstanceState.getString("ch4Local");
             chapterFourDestination.setText(ch4LocalSave);
             String ch4BatSave = savedInstanceState.getString("ch4Bat");
@@ -197,7 +197,7 @@ public class ChapterFourActivity extends AppCompatActivity {
     }
 
     public void goToMap(View view) {
-        Intent intent = new Intent(this, MapActivity.class);
+        Intent intent = new Intent(this, MapSelection.class);
         startActivity(intent);
     }
 
@@ -212,5 +212,10 @@ public class ChapterFourActivity extends AppCompatActivity {
         chapterFourDestination.setText(R.string.ch4Discovery);
         chapterFourBattle.setText(R.string.ch4Battle);
         chapterFourEnd.setText(R.string.ch4End);
+    }
+
+    public void goToChapterFive(View view) {
+        Intent intent = new Intent(this, ChapterFiveActivity.class);
+        startActivity(intent);
     }
 }

@@ -29,7 +29,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Random;
 
-public class MapActivity extends AppCompatActivity {
+public class townMapActivity extends AppCompatActivity {
 
     private static Context context;
 
@@ -49,13 +49,10 @@ public class MapActivity extends AppCompatActivity {
 
 
     Integer[] images = {
-            R.drawable.map1,
-            R.drawable.map2,
-            R.drawable.map3,
-            R.drawable.map4,
-            R.drawable.map5,
-            R.drawable.map6,
-            R.drawable.map7,
+            R.drawable.village1,
+            R.drawable.village2,
+            R.drawable.village3,
+            R.drawable.village4,
     };
 
 
@@ -172,7 +169,3 @@ public class MapActivity extends AppCompatActivity {
         });
     }
 }
-
-
-
-

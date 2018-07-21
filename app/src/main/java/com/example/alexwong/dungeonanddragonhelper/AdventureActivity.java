@@ -35,6 +35,7 @@ TextView beginningEnemies;
         final Button dungeonButton = findViewById(R.id.genDungeonButton);
         final Button monsterCameraButton = findViewById(R.id.monCodexButton);
 
+
         if(savedInstanceState != null){
             String beginningSave = savedInstanceState.getString("beginSave");
             beginningtext.setText(beginningSave);
@@ -218,5 +219,10 @@ TextView beginningEnemies;
         beginningTown.setText(R.string.chapterOneTown);
         beginningDungeon.setText(R.string.ch1Dungeon);
         beginningEnemies.setText(R.string.ch1Enemies);
+    }
+
+    public void goToMap(View view) {
+        Intent intent = new Intent(this, MapSelection.class);
+        startActivity(intent);
     }
 }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchment"
+    tools:context="com.example.alexwong.dungeonanddragonhelper.townMapActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_home"
+        android:id="@+id/home_button"
+        android:layout_marginLeft="10dp"
+        android:onClick="goHome"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_map"
+        android:id="@+id/saveMapButton"
+        android:onClick="saveMap"
+        android:layout_toRightOf="@+id/home_button"
+        android:layout_toEndOf="@+id/home_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_map"
+        android:id="@+id/uploadMapbutton"
+        android:onClick="putBytes"
+        android:layout_toRightOf="@id/saveMapButton"
+        android:layout_toEndOf="@id/saveMapButton" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/download_map"
+        android:id="@+id/downloadMapButton"
+        android:onClick="getMapFromStorage"
+        android:textSize="10sp"
+        android:layout_toRightOf="@id/uploadMapbutton"
+        android:layout_toEndOf="@id/uploadMapbutton"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadMapbutton"
+        android:id="@+id/deleteButton"
+        android:text="@string/deleteMap"
+        android:onClick="deleteMapFromStorage" />
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/mapView"
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"/>
+
+    <Button
+        android:id="@+id/getMapButton"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/get"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -30,7 +30,11 @@
         <activity android:name=".MonsterInfoActivitiy" />
         <activity android:name=".MonsterDetectionActivity" />
         <activity android:name=".ChapterThreeActivity" />
-        <activity android:name=".ChapterFourActivity"></activity>
+        <activity android:name=".ChapterFourActivity" />
+        <activity android:name=".ChapterFiveActivity" />
+        <activity android:name=".MapSelection" />
+        <activity android:name=".townMapActivity" />
+        <activity android:name=".labyrinthMapActivity"></activity>
     </application>
 
 </manifest>
