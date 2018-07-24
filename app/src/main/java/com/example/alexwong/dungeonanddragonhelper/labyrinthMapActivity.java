@@ -51,6 +51,8 @@ public class labyrinthMapActivity extends AppCompatActivity {
     Integer[] images = {
             R.drawable.labyrinth1,
             R.drawable.labyrinth2,
+            R.drawable.labyrinth3,
+            R.drawable.labyrinth4,
     };
 
 

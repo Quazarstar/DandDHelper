@@ -56,6 +56,7 @@ public class MapActivity extends AppCompatActivity {
             R.drawable.map5,
             R.drawable.map6,
             R.drawable.map7,
+            R.drawable.map8,
     };
 
 

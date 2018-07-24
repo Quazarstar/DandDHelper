@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.github.chrisbanes.photoview.PhotoView;
+
 public class MonsterInfoActivitiy extends AppCompatActivity {
 
     TextView gameInfo;
+    PhotoView photoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +19,12 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
         setContentView(R.layout.activity_game_info);
 
         gameInfo = findViewById(R.id.gameText);
+        photoView = (PhotoView) findViewById(R.id.monsterView);
 
         String title = getIntent().getExtras().getString("TITLE");
         getSupportActionBar().setTitle(title);
         getContentBasedOnTitle(title);
+        getPictureBasedOnTitle(title);
 
     }
 
@@ -39,6 +44,16 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
         }
 
         gameInfo.setText(textToShow);
+    }
+
+    public void getPictureBasedOnTitle(String title){
+
+        switch (title){
+            case "GOBLIN\n": photoView.setImageResource(R.drawable.goblin);
+                break;
+            case "KOBOLD\n": photoView.setImageResource(R.drawable.kobold);
+                break;
+        }
     }
 
 

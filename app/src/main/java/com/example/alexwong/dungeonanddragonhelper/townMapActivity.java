@@ -53,6 +53,10 @@ public class townMapActivity extends AppCompatActivity {
             R.drawable.village2,
             R.drawable.village3,
             R.drawable.village4,
+            R.drawable.village5,
+            R.drawable.village6,
+            R.drawable.village7,
+            R.drawable.village8,
     };
 
 
