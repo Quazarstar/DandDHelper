@@ -47,10 +47,24 @@
     <string name="chapterTwoToChapterThreeReason">Upon rescuing their informant, they would give the party information that guides them to ____</string>
     <string name="chapterTwoSelectedEnd">Upon rescuing their informant, they would give the party information that guides them to \u0020</string>
     <string name="chapter2Objective">Your party learns of a quest from the town to ____</string>
-    <string name="goblin">Goblins</string>
-    <string name="kobolds">Kobolds</string>
+
+    <string name="goblin">Goblins are strange humanoid creatures that are said to of been born from the depths of the abyss itself, often traveling in packs or warbands, they are not to be underestimated for their resourcefulness, even by the strongest of adventurers.</string>
+    <string name="kobolds">Kobolds are small scaly, reptilian folk that usually hunt in packs, they are cold blooded unlike dragonfolk and are usually under the service of evil dragons, worshipping them with crude statues. </string>
     <string name="bandits">Bandits</string>
     <string name="wolves">Wolves</string>
+
+    <string name="goblinTrait">Traits: Nimble action: The goblin can hide or disengage as a bonus action every turn.</string>
+    <string name="koboldTrait">Traits: Pack Tactics: The kobolds have advantage on an Attack roll if at least one of the kobold\'s allies is within 5 ft of the creature.</string>
+
+    <string name="goblinAttacks">Attacks: Melee attack: +4 to hit, reach 5ft, one target. Hit: 5 Slashing damage.\nRanged attack: +4 to hit, range 80/320 ft, one target. Hit: 5 Piercing damage.</string>
+    <string name="koboldAttacks">Attacks: Melee attack: +4 to hit, reach 5ft, one target. Hit: 4 Piercing damage.\nRanged Attack: +4 to hit, reach 30/120ft, one target. Hit: 4 bludgeoning damage.</string>
+
+    <string name="goblinArmor">Armor:15\nHp:7\nSpeed:30ft</string>
+    <string name="koboldArmor">Armor:12\nHp:5\nSpeed:30ft</string>
+
+    <string name="goblinStats">Stats: Str-7 Dex-15 Con-11 Int-12 Wis-4 Cha-7</string>
+    <string name="koboldStats">Stats: Str-7 Dex-14 Con-8 Int-7 Wis-6 Cha-7</string>
+
     <string name="drkCave">Dark Cave</string>
     <string name="castleDungeon">Castle Dungeons</string>
     <string name="forestDungeon">Dense forest</string>
