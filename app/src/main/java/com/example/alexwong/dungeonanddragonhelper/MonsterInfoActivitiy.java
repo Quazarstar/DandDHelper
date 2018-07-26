@@ -50,6 +50,8 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "BANDIT\n":  textToShow = getString(R.string.bandits);
                 break;
+            case "IMP\n": textToShow = getString(R.string.imp);
+                break;
             default: textToShow = "Invalid title";
                 break;
         }
@@ -64,6 +66,14 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "KOBOLD\n": traitToShow = getString(R.string.koboldTrait);
                 break;
+            case "BANDIT\n": traitToShow = getString(R.string.banditTrait);
+                break;
+            case "WOLF\n": traitToShow = getString(R.string.wolfTrait);
+                break;
+            case "IMP\n": traitToShow = getString(R.string.impTrait);
+                break;
+            default: traitToShow = "Invalid title";
+                break;
         }
         traitInfo.setText(traitToShow);
     }
@@ -74,6 +84,14 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
             case "GOBLIN\n": attackToShow = getString(R.string.goblinAttacks);
                 break;
             case "KOBOLD\n": attackToShow = getString(R.string.koboldAttacks);
+                break;
+            case "BANDIT\n": attackToShow = getString(R.string.banditAttacks);
+                break;
+            case "WOLF\n": attackToShow = getString(R.string.wolfAttacks);
+                break;
+            case "IMP\n": attackToShow = getString(R.string.impAttacks);
+                break;
+            default: attackToShow = "Invalid title";
                 break;
         }
         attackInfo.setText(attackToShow);
@@ -86,6 +104,14 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "KOBOLD\n": armorToShow = getString(R.string.koboldArmor);
                 break;
+            case "BANDIT\n": armorToShow = getString(R.string.banditArmor);
+                break;
+            case "WOLF\n": armorToShow = getString(R.string.wolfArmor);
+                break;
+            case "IMP\n": armorToShow = getString(R.string.impArmor);
+                break;
+            default: armorToShow = "Invalid title";
+                break;
         }
         armorInfo.setText(armorToShow);
     }
@@ -96,6 +122,14 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
             case "GOBLIN\n": statsToShow = getString(R.string.goblinStats);
                 break;
             case "KOBOLD\n": statsToShow = getString(R.string.koboldStats);
+                break;
+            case "BANDIT\n": statsToShow = getString(R.string.banditStats);
+                break;
+            case "WOLF\n": statsToShow = getString(R.string.wolfStats);
+                break;
+            case "IMP\n": statsToShow = getString(R.string.impStats);
+                break;
+            default: statsToShow = "Invalid title";
                 break;
         }
         statsInfo.setText(statsToShow);
@@ -111,6 +145,7 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "BANDIT\n": photoView.setImageResource(R.drawable.bandit);
                 break;
+            case "IMP\n": photoView.setImageResource(R.drawable.imp);
         }
     }
 

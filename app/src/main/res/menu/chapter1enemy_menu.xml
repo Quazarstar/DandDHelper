@@ -2,18 +2,18 @@
 
     <item
         android:id="@+id/one"
-        android:title="@string/goblin"/>
+        android:title="@string/ch1enemey1"/>
 
     <item
         android:id="@+id/two"
-        android:title="@string/kobolds"/>
+        android:title="@string/ch1enemy2"/>
 
     <item
         android:id="@+id/three"
-        android:title="@string/bandits"/>
+        android:title="@string/ch1enemy3"/>
 
     <item
         android:id="@+id/four"
-        android:title="@string/wolves"/>
+        android:title="@string/ch1enemy4"/>
 
 </menu>

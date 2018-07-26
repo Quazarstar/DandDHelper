@@ -50,20 +50,41 @@
 
     <string name="goblin">Goblins are strange humanoid creatures that are said to of been born from the depths of the abyss itself, often traveling in packs or warbands, they are not to be underestimated for their resourcefulness, even by the strongest of adventurers.</string>
     <string name="kobolds">Kobolds are small scaly, reptilian folk that usually hunt in packs, they are cold blooded unlike dragonfolk and are usually under the service of evil dragons, worshipping them with crude statues. </string>
-    <string name="bandits">Bandits</string>
-    <string name="wolves">Wolves</string>
+    <string name="bandits">Bandits travel in gangs are usually led by bandit leaders or bandit veterans, typically bandit gangs roam the wilderness and outskirts of towns, looking for unsuspecting victims to rough up for spare coin. </string>
+    <string name="wolves">Wolves are rarely seen alone, these pack predators are constantly found roaming the wilderness and occasionally can be found in caves. Many adventurer\'s have fallen to wolf ambushes. </string>
+    <string name="imp">Imps are known as demon tricksters, but more often than not are known as the lackeys of warlocks and wizards or other greater demon. Imps are the rabble that while aren\'t very intimidating on their own, can be quite a hastle with their shape changing magic.</string>
+
 
     <string name="goblinTrait">Traits: Nimble action: The goblin can hide or disengage as a bonus action every turn.</string>
     <string name="koboldTrait">Traits: Pack Tactics: The kobolds have advantage on an Attack roll if at least one of the kobold\'s allies is within 5 ft of the creature.</string>
+    <string name="banditTrait">Traits: None</string>
+    <string name="wolfTrait">Traits: Keen hearing and smell: Wolves have advantage on perception checks that require smelling or hearing.\nPack tactics: The wolf has advantage on any attack roll if atleast one of the wolves allies is within 5ft.  </string>
+    <string name="impTrait">Traits: Shapechanger: The imp can use its action to Polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft, fly 60 ft.), or a Spider (20 ft, climb 20 ft.), or back into its true form. Its Statistics are the same in each form, except for the speed changes noted. Any Equipment it is wearing or carrying isn\'t transformed. It reverts to its true form if it dies.
+        \nDevil\'s Sight: Magical Darkness doesn\'t impede the imp\'s Darkvision.
+        \nMagic Resistance: The imp has advantage on Saving Throws against Spells and other magical effects.
+        \nVariant: Familiar: The imp can enter into a contract to serve another creature as a familiar, forming a Telepathic Bond with its willing master. While the two are bonded, the master can sense what the imp Senses as long as they are within 1 mile of each other. While the imp is within 10 feet of its master, the master shares the imp’s Magic Resistance trait. If its master violates the terms of the contract, the imp can end its service as a familiar, ending the Telepathic Bond.
+        \nInvisibility: The imp magically turns Invisible until it attacks, or until its Concentration ends (as if concentrating on a spell). Any Equipment the imp wears or carries is Invisible with it.</string>
+
 
     <string name="goblinAttacks">Attacks: Melee attack: +4 to hit, reach 5ft, one target. Hit: 5 Slashing damage.\nRanged attack: +4 to hit, range 80/320 ft, one target. Hit: 5 Piercing damage.</string>
     <string name="koboldAttacks">Attacks: Melee attack: +4 to hit, reach 5ft, one target. Hit: 4 Piercing damage.\nRanged Attack: +4 to hit, reach 30/120ft, one target. Hit: 4 bludgeoning damage.</string>
+    <string name="banditAttacks">Attacks: Scimitar: Melee Weapon Attack: +3 to hit, reach 5 ft, one target. Hit: 4 (1d6 + 1) slashing damage.\nLight Crossbow: Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft, one target. Hit: 5 (1d8 + 1) piercing damage.</string>
+    <string name="wolfAttacks">Attacks: Bite attack: +4 to hit, reach 5ft, one target. Hit: 2d4 +2 piercing damage. If the target is a living creature, it must succeed on a DC 12 Strength saving throw or be knocked prone.</string>
+    <string name="impAttacks">Attacks: Sting (Bite in Beast Form): Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: 5 (1d4 + 4) piercing damage, and the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.</string>
 
     <string name="goblinArmor">Armor:15\nHp:7\nSpeed:30ft</string>
     <string name="koboldArmor">Armor:12\nHp:5\nSpeed:30ft</string>
+    <string name="banditArmor">Armor:12\nHp12\nSpeed:30ft</string>
+    <string name="wolfArmor">Armor:13\nHp:11\nSpeed:40ft</string>
+    <string name="impArmor">Armor:13\nHp10\nSpeed20ft, fly40ft.</string>
+
 
     <string name="goblinStats">Stats: Str-7 Dex-15 Con-11 Int-12 Wis-4 Cha-7</string>
     <string name="koboldStats">Stats: Str-7 Dex-14 Con-8 Int-7 Wis-6 Cha-7</string>
+    <string name="banditStats">Stats: Str-10 Dex-13 Con-11 Int-9 Wis-10 Cha-10</string>
+    <string name="wolfStats">Stats: Str-13 Dex-14 Con-13 Int-2 Wis-13 Cha-5</string>
+    <string name="impStats">Stats: Str-6 Dex-18 Con-14 Int-11 Wis-12 Cha-14</string>
+
 
     <string name="drkCave">Dark Cave</string>
     <string name="castleDungeon">Castle Dungeons</string>
@@ -179,4 +200,8 @@
     <string name="ch5SelectedTurn">After successfully defending themselves against hte ambush, the party would find that something has changed within the dungeon, that change is \u0020</string>
     <string name="ch5SelectedBoss">As the party emerges from the next room they would find that their target is awaiting them in the next room! That target being \u0020</string>
     <string name="ch5SelectedEnd">As the foul adversary is defeated once and for all, and the treasure claimed, the party can finally return home and retire for now, the treasure being split up and the party would \u0020</string>
+    <string name="ch1enemey1">goblins</string>
+    <string name="ch1enemy2">kobolds</string>
+    <string name="ch1enemy3">bandits</string>
+    <string name="ch1enemy4">wolves</string>
 </resources>
