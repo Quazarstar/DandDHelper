@@ -38,7 +38,7 @@
         android:text="@string/download_map"
         android:id="@+id/downloadMapButton"
         android:onClick="getMapFromStorage"
-        android:textSize="10sp"
+        android:textSize="6sp"
         android:layout_toRightOf="@id/uploadMapbutton"
         android:layout_toEndOf="@id/uploadMapbutton"
         tools:ignore="SmallSp" />
