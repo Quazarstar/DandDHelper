@@ -34,7 +34,8 @@
         <activity android:name=".ChapterFiveActivity" />
         <activity android:name=".MapSelection" />
         <activity android:name=".townMapActivity" />
-        <activity android:name=".labyrinthMapActivity"></activity>
+        <activity android:name=".labyrinthMapActivity" />
+        <activity android:name=".DiceActivity"></activity>
     </application>
 
 </manifest>

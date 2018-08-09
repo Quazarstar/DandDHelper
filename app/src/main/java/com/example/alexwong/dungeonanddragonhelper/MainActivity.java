@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MonsterDetectionActivity.class);
         startActivity(intent);
     }
+
+    public void goToDice(View view) {
+        Intent intent = new Intent(this, DiceActivity.class);
+        startActivity(intent);
+    }
 }

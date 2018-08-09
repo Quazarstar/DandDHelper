@@ -34,6 +34,14 @@
         android:onClick="goToAdventure"
         android:text="@string/start_button"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/diceButton"
+        android:text="@string/go_to_dice_roller"
+        android:onClick="goToDice"/>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

@@ -221,4 +221,14 @@
     <string name="ch1enemy2">kobolds</string>
     <string name="ch1enemy3">bandits</string>
     <string name="ch1enemy4">wolves</string>
+    <string name="diceString">Press a button to roll the dice!</string>
+    <string name="roll_d20">D20</string>
+    <string name="roll_d10">D10</string>
+    <string name="d4Roll">D4</string>
+    <string name="d8Roll">D8</string>
+    <string name="d12Roll">D12</string>
+    <string name="d100Roll">D100</string>
+    <string name="rollD6">D6</string>
+    <string name="go_to_dice_roller">Go to Dice Roller</string>
+
 </resources>

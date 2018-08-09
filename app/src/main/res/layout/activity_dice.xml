@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchment"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.alexwong.dungeonanddragonhelper.DiceActivity">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/dicePhoto"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/homeButtonDice"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/diceDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="@string/diceString"
+        android:textColor="@color/blackBack"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/D20"
+        android:text="@string/roll_d20"/>
+
+    <Button
+        android:id="@+id/D10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/D20"
+        android:layout_toEndOf="@+id/D20"
+        android:layout_toRightOf="@+id/D20"
+        android:text="@string/roll_d10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/D20"
+        android:layout_toEndOf="@id/D20"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/D12"
+        android:text="@string/d12Roll"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/D20"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/D8"
+        android:text="@string/d8Roll"
+        android:layout_toStartOf="@id/D20" />
+
+    <Button
+        android:id="@+id/D4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/D20"
+        android:layout_alignLeft="@+id/D8"
+        android:layout_alignStart="@+id/D8"
+        android:text="@string/d4Roll" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/D4"
+        android:layout_alignBottom="@+id/D4"
+        android:layout_toEndOf="@+id/D8"
+        android:layout_toRightOf="@+id/D8"
+        android:id="@+id/D100"
+        android:text="@string/d100Roll"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/D10"
+        android:layout_toEndOf="@+id/D4"
+        android:layout_toRightOf="@+id/D4"
+        android:id="@+id/D6"
+        android:text="@string/rollD6"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/returnMain"
+        android:id="@+id/homeButtonDice"
+        android:onClick="goHome"/>
+
+</RelativeLayout>
