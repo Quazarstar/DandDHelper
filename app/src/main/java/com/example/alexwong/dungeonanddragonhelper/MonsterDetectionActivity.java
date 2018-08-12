@@ -1,16 +1,24 @@
 package com.example.alexwong.dungeonanddragonhelper;
 
 import android.Manifest;
+import android.app.ActionBar;
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -33,13 +41,52 @@ public class MonsterDetectionActivity extends AppCompatActivity {
     public static final int CAMERA_PERMISSIONS_REQUEST = 1;
     private static final int REQUEST_IMAGE_CAPTURE = 2;
 
+    private Context mContext;
+
     private ImageView photo_view;
+    private PopupWindow mPopupWindow;
+
+    private RelativeLayout mRelativeLayout;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logodetection);
+
+        mContext = getApplicationContext();
+        Activity mActivity = MonsterDetectionActivity.this;
+        mRelativeLayout = (RelativeLayout) findViewById(R.id.activity_LogoDet);
+        Button popButton = findViewById(R.id.detectionHelp);
+
+        popButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(LAYOUT_INFLATER_SERVICE);
+
+                View popView = inflater.inflate(R.layout.custompop,null);
+
+                mPopupWindow = new PopupWindow(
+                        popView,
+                        RelativeLayout.LayoutParams.WRAP_CONTENT,
+                        ActionBar.LayoutParams.WRAP_CONTENT
+                );
+
+                if(Build.VERSION.SDK_INT>=21){
+                    mPopupWindow.setElevation(5.0f);
+                }
+
+                Button closeButton = popView.findViewById(R.id.ib_close);
+
+                closeButton.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View view){
+                        mPopupWindow.dismiss();
+                    }
+                });
+                mPopupWindow.showAtLocation(mRelativeLayout, Gravity.CENTER,0,0);
+            }
+        });
 
         Button button = findViewById(R.id.setPicture);
         button.setOnClickListener(new View.OnClickListener(){
@@ -140,4 +187,6 @@ public class MonsterDetectionActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+
 }

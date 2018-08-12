@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DungeonAndDragonHelper</string>
+    <string name="app_name">GmGuide</string>
     <string name="welcome"><![CDATA[Welcome to the D&D world]]></string>
     <string name="Home"><![CDATA[D&D Helper Home]]></string>
     <string name="Map_button">Click to go to map generation</string>
@@ -230,5 +230,8 @@
     <string name="d100Roll">D100</string>
     <string name="rollD6">D6</string>
     <string name="go_to_dice_roller">Go to Dice Roller</string>
+    <string name="monHelp">Need help?</string>
+    <string name="closeBut">Close</string>
+    <string name="helpTextMonster">If you are having trouble getting the correct names to scan, please remember that it is most effective in block capital letters. I shall provide a list of current monster names here for future reference.\nGOBLIN\nWOLF\nBANDIT\nIMP\nZOMBIE\nSKELETON\nKOBOLD\nDARK MAGE</string>
 
 </resources>
