@@ -32,7 +32,8 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/start_adventure"
         android:onClick="goToAdventure"
-        android:text="@string/start_button"/>
+        android:text="@string/start_button"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -40,28 +41,34 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/diceButton"
         android:text="@string/go_to_dice_roller"
-        android:onClick="goToDice"/>
+        android:onClick="goToDice"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Map_button"
+        android:onClick="goToMap"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monsterNameActivityButton"
+        android:onClick="goToDetection"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
 
-            <Button
-                android:id="@+id/map_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Map_button"
-                android:onClick="goToMap"
-                android:layout_centerInParent="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/gmGuideWelcome"
+        android:textAlignment="center"
+        android:textColor="@color/blackBack"
+        android:textSize="25sp"/>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/monsterNameActivityButton"
-                android:onClick="goToDetection"
-                android:layout_below="@+id/map_button"
-                android:layout_centerHorizontal="true"/>
-        </RelativeLayout>
 
     </LinearLayout>
 

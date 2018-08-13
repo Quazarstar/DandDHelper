@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GmGuide</string>
     <string name="welcome"><![CDATA[Welcome to the D&D world]]></string>
-    <string name="Home"><![CDATA[D&D Helper Home]]></string>
+    <string name="Home"><![CDATA[GM Guide Home]]></string>
     <string name="Map_button">Click to go to map generation</string>
     <string name="start_button">Start your Adventure!</string>
     <string name="generate_map">Generate Map</string>
@@ -56,7 +56,9 @@
     <string name="skeletons">Skeletons are said to be vengeful spirits that returned to their bodies long after their passing to enact vengeance on those who have wronged them. They are also summoned as lesser minions by necromancers and wizards to do their bidding, often against their will.</string>
     <string name="zombies">Zombies are often thralls raised from the dead by necromancers in order to carry out their bidding as meatshields and minions, often set upon innocent towns to bring back more bodies to make more zombies.</string>
     <string name="darkMage">It is said that to every light there is a shadow, evil mages are no exception to good mages, often skulking in the shadows conducting vile rituals to cause harm to the innocent.</string>
-
+    <string name="demonLord">The Demon lord is a cruel and malevolent being, tasked with ruling over the demons of the underworld and the realm beyond the mortal plane, it’s his fault that demons can slip through the cracks in reality and break through so easily, while a blessing to warlocks and those who service evil, there will be no end to the endless flow of demons unless the Demon Lord is stopped.</string>
+    <string name="assassin">Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them, including demons.</string>
+    <string name="evilKnight">Knights are normally warriors who pledge service to rulers, religious orders, and noble causes. An Evil knight however is a knight that has abandoned his king and order to pick up the blade of evil, bowing to a demonic or evil master, they pillage and destroy to their hearts content until someone can stop them.</string>
 
     <string name="goblinTrait">Traits: Nimble action: The goblin can hide or disengage as a bonus action every turn.</string>
     <string name="koboldTrait">Traits: Pack Tactics: The kobolds have advantage on an Attack roll if at least one of the kobold\'s allies is within 5 ft of the creature.</string>
@@ -72,6 +74,10 @@
     <string name="zombieTrait">Traits: Undead Fortitude: If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
         \nImmunities: Immune to poison.</string>
     <string name="darkMageTrait">Traits: Evil Aura: Upon getting within 5Ft of the mage, make a DC10 Constitution saving through or be feared to move 5Ft backwards.\nTaste fear: Upon reducing a character to 0Hp, the dark mage feeds upon the fear of potential death, gaining temporary Hp equal to a quarter of that characters maximum Hp value.</string>
+    <string name="demonLordTrait">Traits: Magic Resistance: The Demon Lord has advantage on Saving Throws against Spells and other magical effects.\nDemonic Aura: Any creature that starts its turn within 10 feet of the Demon Lord must succeed on a DC 14 Constitution saving throw or be Poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the Demon Lords aura for 24 hours\nDemon Commander: The Demon Lord has authority over all demons, any demons within 10ft of the Demon Lord grants him an additional 5 temporary HP upon its death. \nResistance: The Demon Lord has resistance to cold, fire, lightning, Bludgeoning, piercing and slashing damage from non-magical weapons.\nImmunities: Immune to Poison.</string>
+    <string name="assassinTrait">Traits: Assassinate: During its first turn, the assassin has advantage on Attack rolls against any creature that hasn\'t moved in its last turn. Any hit the assassin scores against a surprised creature is a critical hit.\n Evasion: If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.\n Sneak Attack (Once Per Turn): The assassin deals an extra 7 damage when it hits a target with a weapon Attack and has advantage on the Attack roll, or when the target is within 5 ft. of an ally of the assassin that isn't Incapacitated and the assassin doesn't have disadvantage on the Attack roll.</string>
+    <string name="evilKnightTrait">Traits: Twisted Bravery: The evil knight has advantage on Saving Throws against being Frightened.\nHeavy Dark Plate: The evil knight’s enchanted dark armor allows him to shrug off minor attacks, if an attack would deal 6 or less damage then the attack is negated by the armor. </string>
+
 
     <string name="goblinAttacks">Attacks: Melee attack: +4 to hit, reach 5ft, one target. Hit: 5 Slashing damage.\nRanged attack: +4 to hit, range 80/320 ft, one target. Hit: 5 Piercing damage.</string>
     <string name="koboldAttacks">Attacks: Melee attack: +4 to hit, reach 5ft, one target. Hit: 4 Piercing damage.\nRanged Attack: +4 to hit, reach 30/120ft, one target. Hit: 4 bludgeoning damage.</string>
@@ -84,6 +90,10 @@
     <string name="darkMageAttacks">Attacks: Quarterstaff. Melee Weapon Attack: +1 to hit, reach 5 ft, one target. Hit: 3 bludgeoning damage.
         \nEvil orb. Ranged spell attack: +2 to hit, reach 20ft, one target. Hit: 6 Arcane damage.
         \nCharm person: Ranged spell: Reach 30ft, one target. The target makes a DC13 Wisdom saving throw or be charmed on fail, the charmed target regards the caster as friendly for 2 turns and acts under the casters will or if the character makes a wisdom saving through.</string>
+    <string name="demonLordAttacks">Attacks: Multiattack: The hezrou makes three attacks: one with its bite and two with its claws.\nBite: Melee Weapon Attack: +7 to hit, reach 5 ft, one target. Hit: 15 (2d10 + 4) piercing damage.\nClaws: Melee Weapon Attack: +7 to hit, reach 5 ft, one target. Hit: 11 (2d6 + 4) slashing damage.\nSummon Demon: The Demon Lord chooses to summon a number of lesser imps to his side to defend him, after rolling a D4, the DM causes the Demon Lord to summon that many Imps into unoccupied spaces within 60ft of the Demon Lord.</string>
+    <string name="assassinAttacks">Attacks: Multiattack: The assassin makes two Shortsword attacks.\nShortsword: Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 6 piercing damage, and the target must make a DC 15 Constitution saving throw, taking 10 poison damage on a failed save, or half as much damage on a successful one.\nLight Crossbow: Ranged Weapon Attack: +6 to hit, range 80/320 ft, one target. Hit: 7 piercing damage, and the target must make a DC 15 Constitution saving throw, taking 10 poison damage on a failed save, or half as much damage on a successful one.</string>
+    <string name="evilKnightAttacks">Attacks: Multiattack: The knight makes two Melee Attacks.\n Greatsword: Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: 10 slashing damage.\n Heavy Crossbow: Ranged Weapon Attack: +2 to hit, range 100/400 ft, one target. Hit: 5 piercing damage.\nDemonic Leadership: For 1 minute, the evil knight can utter a Special Command or warning whenever a demon creature that it can see within 30 ft. of it makes an Attack roll or a saving throw. The demon can add a d4 to its roll provided it can hear the evil knight. A demon can benefit from only one Leadership die at a time. </string>
+
 
     <string name="goblinArmor">Armor:15\nHp:7\nSpeed:30ft</string>
     <string name="koboldArmor">Armor:12\nHp:5\nSpeed:30ft</string>
@@ -92,7 +102,11 @@
     <string name="impArmor">Armor:13\nHp:10\nSpeed:20ft, fly40ft.</string>
     <string name="skeletonArmor">Armor:13\nHp:13\nSpeed:30ft</string>
     <string name="zombieArmor">Armor:8\nHp:22\nSpeed:20ft</string>
-    <string name="darkMageArmor">Armor:14\nHp25\nSpeed:30ft</string>
+    <string name="darkMageArmor">Armor:14\nHp40\nSpeed:30ft</string>
+    <string name="demonLordArmor">Armor:16\nHP:100\nSpeed:30ft</string>
+    <string name="assassinArmor">Armor:15\nHP:35\nSpeed:40ft</string>
+    <string name="evilKnightArmor">Armor:17\nHP:52\nSpeed30ft</string>
+
 
     <string name="goblinStats">Stats: Str-7 Dex-15 Con-11 Int-12 Wis-4 Cha-7</string>
     <string name="koboldStats">Stats: Str-7 Dex-14 Con-8 Int-7 Wis-6 Cha-7</string>
@@ -102,6 +116,10 @@
     <string name="skeletonStats">Stats: Str-10 Dex-13 Con-14 Int-5 Wis-7 Cha-3</string>
     <string name="zombieStats">Stats: Str-12 Dex-5 Con-15 Int-2 Wis-4 Cha-1</string>
     <string name="darkMageStats">Stats: Str-9 Dex-14 Con-12 Int-18 Wis-13</string>
+    <string name="demonLordStats">Stats: Str-19 Dex-17 Con-20 Int-5 Wis-12 Cha-13</string>
+    <string name="assassinStats">Stats: Str-11 Dex–16 Con–14 Int–13 Wis-11 Cha-10</string>
+    <string name="evilKnightStats">Stats: Str-16 Dex-11 Con-14 Int-11 Wis-11 Cha-15</string>
+    
 
     <string name="drkCave">Dark Cave</string>
     <string name="castleDungeon">Castle Dungeons</string>
@@ -132,7 +150,7 @@
     <string name="ch2HiddenPass">A hidden passage to create a shortcut</string>
     <string name="ch2Cart">A special traveling cart for transport</string>
     <string name="prevChapter">Prev Chapter</string>
-    <string name="newCampaign">New Campaign</string>
+    <string name="newCampaign">Clear</string>
     <string name="ch3">Chapter Three</string>
     <string name="ch3StartTown">After traveling for a long while from the previous village, the party would find themselves in the new town of ____</string>
     <string name="ch3TownDisaster">After arriving in the town they would find that something tragic has befallen it, the town has been ____</string>
@@ -232,6 +250,7 @@
     <string name="go_to_dice_roller">Go to Dice Roller</string>
     <string name="monHelp">Need help?</string>
     <string name="closeBut">Close</string>
-    <string name="helpTextMonster">If you are having trouble getting the correct names to scan, please remember that it is most effective in block capital letters. I shall provide a list of current monster names here for future reference.\nGOBLIN\nWOLF\nBANDIT\nIMP\nZOMBIE\nSKELETON\nKOBOLD\nDARK MAGE</string>
+    <string name="helpTextMonster">If you are having trouble getting the correct names to scan, please remember that it is most effective in block capital letters. I shall provide a list of current monster names here for future reference.\nGOBLIN\nWOLF\nBANDIT\nIMP\nZOMBIE\nSKELETON\nKOBOLD\nDARK MAGE\nASSASSIN\nEVIL KNIGHT\nDEMON LORD</string>
+    <string name="gmGuideWelcome"><![CDATA[Welcome to the GM Guide Application, browse as you wish and enjoy, the world of D&D is at your fingertips. tap start adventure to begin a campaign.]]></string>
 
 </resources>

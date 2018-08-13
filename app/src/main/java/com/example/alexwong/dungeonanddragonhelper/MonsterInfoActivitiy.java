@@ -58,6 +58,12 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "DARK\u0020MAGE\n": textToShow = getString(R.string.darkMage);
                 break;
+            case "DEMON\u0020LORD\n": textToShow = getString(R.string.demonLord);
+                break;
+            case "ASSASSIN\n": textToShow = getString(R.string.assassin);
+                break;
+            case "EVIL\u0020KNIGHT\n": textToShow = getString(R.string.evilKnight);
+                break;
             default: textToShow = "Invalid title";
                 break;
         }
@@ -84,6 +90,12 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "DARK\u0020MAGE\n": traitToShow = getString(R.string.darkMageTrait);
                 break;
+            case "DEMON\u0020LORD\n": traitToShow = getString(R.string.demonLordTrait);
+                break;
+            case "ASSASSIN\n": traitToShow = getString(R.string.assassinTrait);
+                break;
+            case "EVIL\u0020KNIGHT\n": traitToShow = getString(R.string.evilKnightTrait);
+                break;
             default: traitToShow = "Invalid title";
                 break;
         }
@@ -108,6 +120,12 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
             case "ZOMBIE\n": attackToShow = getString(R.string.zombieAttacks);
                 break;
             case "DARK\u0020MAGE\n": attackToShow = getString(R.string.darkMageAttacks);
+                break;
+            case "DEMON\u0020LORD\n": attackToShow = getString(R.string.demonLordAttacks);
+                break;
+            case "ASSASSIN\n": attackToShow = getString(R.string.assassinAttacks);
+                break;
+            case "EVIL\u0020KNIGHT\n": attackToShow = getString(R.string.evilKnightAttacks);
                 break;
             default: attackToShow = "Invalid title";
                 break;
@@ -134,6 +152,12 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "DARK\u0020MAGE\n": armorToShow = getString(R.string.darkMageArmor);
                 break;
+            case "DEMON\u0020LORD\n": armorToShow = getString(R.string.demonLordArmor);
+                break;
+            case "ASSASSIN\n": armorToShow = getString(R.string.assassinArmor);
+                break;
+            case "EVIL\u0020KNIGHT\n": armorToShow = getString(R.string.evilKnightArmor);
+                break;
             default: armorToShow = "Invalid title";
                 break;
         }
@@ -159,6 +183,12 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "DARK\u0020MAGE\n": statsToShow = getString(R.string.darkMageStats);
                 break;
+            case "DEMON\u0020LORD\n": statsToShow = getString(R.string.demonLordStats);
+                break;
+            case "ASSASSIN\n": statsToShow = getString(R.string.assassinStats);
+                break;
+            case "EVIL\u0020KNIGHT\n": statsToShow = getString(R.string.evilKnightStats);
+                break;
             default: statsToShow = "Invalid title";
                 break;
         }
@@ -182,6 +212,12 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
             case "ZOMBIE\n": photoView.setImageResource(R.drawable.zombie);
                 break;
             case "DARK\u0020MAGE\n": photoView.setImageResource(R.drawable.darkmage);
+                break;
+            case "DEMON\u0020LORD\n": photoView.setImageResource(R.drawable.demonlord);
+                break;
+            case "ASSASSIN\n": photoView.setImageResource(R.drawable.assassin);
+                break;
+            case "EVIL\u0020KNIGHT\n": photoView.setImageResource(R.drawable.evilknight);
                 break;
         }
     }
