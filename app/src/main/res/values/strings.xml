@@ -22,13 +22,13 @@
     <string name="ch2town3">Draker</string>
     <string name="questObjective">Your adventuring parties main quest objective is _____</string>
     <string name="selectedQuest">Your parties main objective in this campaign is to \u0020</string>
-    <string name="quest3">Find and explore the mythical labyrinth unknown to all and guarded by a great warlock, no-one has returned alive.</string>
-    <string name="quest2">Retrieve the artifact of power from an evil wizard who stole it.</string>
-    <string name="quest1">Defeat the Dark Lord terrorising the land and bring back the light.</string>
-    <string name="party1">One</string>
-    <string name="party2">Two</string>
-    <string name="party3">Three</string>
-    <string name="party4">Four</string>
+    <string name="quest3">find and explore the mythical labyrinth unknown to all and guarded by a great warlock, no-one has returned alive.</string>
+    <string name="quest2">retrieve the artifact of power from an evil wizard who stole it.</string>
+    <string name="quest1">defeat the Dark Lord terrorising the land and bring back the light.</string>
+    <string name="party1">one</string>
+    <string name="party2">two</string>
+    <string name="party3">three</string>
+    <string name="party4">four</string>
     <string name="chapterOneTown">Your adventuring party begins in the town of _____</string>
     <string name="ch1town1">Rivera</string>
     <string name="ch1town2">Valstak</string>
@@ -121,10 +121,10 @@
     <string name="evilKnightStats">Stats: Str-16 Dex-11 Con-14 Int-11 Wis-11 Cha-15</string>
     
 
-    <string name="drkCave">Dark Cave</string>
-    <string name="castleDungeon">Castle Dungeons</string>
-    <string name="forestDungeon">Dense forest</string>
-    <string name="hideoutDungeon">Secret hideout</string>
+    <string name="drkCave">dark Cave</string>
+    <string name="castleDungeon">castle Dungeons</string>
+    <string name="forestDungeon">dense forest</string>
+    <string name="hideoutDungeon">secret hideout</string>
 
     <string name="goToLogo">Go to monster name detection</string>
     <string name="setPicture">Set name</string>
@@ -136,19 +136,19 @@
     <string name="download_map">Download last uploaded map</string>
 
     <string name="monsterCodexButton">Go to monster codex</string>
-    <string name="ch2sidequest1">Help defeat the raiding bandits</string>
-    <string name="ch2sidequest2">Solve a series of murder cases</string>
-    <string name="ch2sidequest3">Get an animal feed shipment from the nearby farm</string>
+    <string name="ch2sidequest1">help defeat the raiding bandits</string>
+    <string name="ch2sidequest2">solve a series of murder cases</string>
+    <string name="ch2sidequest3">get an animal feed shipment from the nearby farm</string>
     <string name="deleteMap">Delete Map</string>
-    <string name="mainQuestHint1">The stubborn and greedy mayor.</string>
-    <string name="mainQuestHint2">The leader of the town\'s brothel.</string>
-    <string name="mainQuestHint3">A magical pixie living in the forest</string>
-    <string name="hobgoblinDungeonch2">The hobgoblins in the nearby mountain</string>
-    <string name="darkCultCh2">The dark cult in the sewers</string>
-    <string name="forestDungeonCh2">The king of the forest wolves</string>
-    <string name="ch2secretEscort">The a special guide who shows them the quickest path</string>
-    <string name="ch2HiddenPass">A hidden passage to create a shortcut</string>
-    <string name="ch2Cart">A special traveling cart for transport</string>
+    <string name="mainQuestHint1">the stubborn and greedy mayor.</string>
+    <string name="mainQuestHint2">the leader of the town\'s brothel.</string>
+    <string name="mainQuestHint3">a magical pixie living in the forest</string>
+    <string name="hobgoblinDungeonch2">the hobgoblins in the nearby mountain</string>
+    <string name="darkCultCh2">the dark cult in the sewers</string>
+    <string name="forestDungeonCh2">the king of the forest wolves</string>
+    <string name="ch2secretEscort">the a special guide who shows them the quickest path</string>
+    <string name="ch2HiddenPass">a hidden passage to create a shortcut</string>
+    <string name="ch2Cart">a special traveling cart for transport</string>
     <string name="prevChapter">Prev Chapter</string>
     <string name="newCampaign">Clear</string>
     <string name="ch3">Chapter Three</string>
