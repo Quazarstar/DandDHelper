@@ -203,7 +203,7 @@ public class MonsterInfoActivitiy extends AppCompatActivity {
                 break;
             case "WOLF\n": photoView.setImageResource(R.drawable.wolves);
                 break;
-            case "BANDIT\n": photoView.setImageResource(R.drawable.bandit);
+            case "BANDIT\n": photoView.setImageResource(R.drawable.banditicon);
                 break;
             case "IMP\n": photoView.setImageResource(R.drawable.imp);
                 break;
